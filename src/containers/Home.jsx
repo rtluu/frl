@@ -16,11 +16,11 @@ const Home = (props) => {
           <h1 className="hero-headline">We are <span id="bold">building</span> the world we <span id="italic">want</span> to live in.</h1>
           <div className="hero-divider"></div>
           <h4 className="hero-description">Fastrope is an elite team of entrepreneurial builders who partner with world-class innovators to make crazy ideas real.</h4>
-          <a className="hero-button-link" href="/contact">
+          <Link to="/contact" className="hero-button-link">
             <button id="hero-button">
               <h5 className="button-text">LET'S BUILD SOMETHING AMAZING</h5>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -100,23 +100,23 @@ const Home = (props) => {
         <Link to="/wodify" id="fitness" className="work-item">
           <h4 className="work-text">Supercharging human<br></br>ability</h4>
         </Link>
-        <Link id="unicorn" className="work-item">
+        <Link to="/" id="unicorn" className="work-item">
           <h4 className="work-text">Creating unicorn startups</h4>
         </Link>
       </div>
 
       <div className="people-block">
-        <h3 className="people-text">Meet our team of passionate and brilliant builders, including scientists, technologists, and creatives who are as inspiring as their work.<a href="/team"><span id="team-arrow"/></a></h3>
+        <h3 className="people-text">Meet our team of passionate and brilliant builders, including scientists, technologists, and creatives who are as inspiring as their work.<Link to="/team"><span id="team-arrow"/></Link></h3>
       </div>
 
       <div className="cta-block">
         <div className="cta-inner">
           <h1 className="cta-headline">No idea is <span id="bold">too big</span> or <span id="italic">too small</span>, so...</h1>
-            <a className="cta-button-link" href="#contact">
+            <Link to="/contact" className="cta-button-link" href="#contact">
               <button id="cta-button">
                 <h5 className="button-text">LET'S BUILD SOMETHING AMAZING</h5>
               </button>
-            </a>
+            </Link>
         </div>
       </div>
 
