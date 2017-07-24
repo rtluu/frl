@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
           </a>
         </div>
         <div className="right">
-          <Link to="/#work" className="page-link">Work </Link>
+          <a href="/#work" className="page-link">Work</a>
           <Link to="/team" className="page-link" href="/team">Team</Link>
           <Link to="/contact" className="page-link">Contact</Link>
         </div>
