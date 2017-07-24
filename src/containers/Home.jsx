@@ -94,10 +94,10 @@ const Home = (props) => {
         <Link to="/networkforgood" id="crowdsourcing" className="work-item">
           <h4 className="work-text">Accelerating micro- philanthropy</h4>
         </Link>
-        <Link href="/gwmfa" id="healthcare" className="work-item">
+        <Link to="/gwmfa" id="healthcare" className="work-item">
           <h4 className="work-text">Disrupting healtcare delivery</h4>
         </Link>
-        <Link href="/wodify" id="fitness" className="work-item">
+        <Link to="/wodify" id="fitness" className="work-item">
           <h4 className="work-text">Supercharging human<br></br>ability</h4>
         </Link>
         <Link id="unicorn" className="work-item">
