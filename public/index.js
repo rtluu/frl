@@ -34891,6 +34891,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -34905,258 +34907,295 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(559);
 	
-	var Team = function Team(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { id: 'team' },
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'h1',
-	      { className: 'team-title' },
-	      'The FastRope Team'
-	    ),
-	    _react2.default.createElement(
-	      'h3',
-	      { className: 'team-description' },
-	      'Our team comprised of veteran founders, socially-conscious entrepreneurs, and engineers offer strategy and solutions that drive real change. Collectively we\'ve worked with some of the world\'s most innovative companies, successfully raised capital and invested in startups.'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'team-box' },
-	      _react2.default.createElement(
-	        'ul',
-	        { className: 'team-list' },
+	var Team = function (_React$Component) {
+	  _inherits(Team, _React$Component);
+	
+	  function Team(props) {
+	    _classCallCheck(this, Team);
+	
+	    var _this = _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this, props));
+	
+	    _this.state = {};
+	    _this.openOverlay = _this.openOverlay.bind(_this);
+	    _this.closeOverlay = _this.closeOverlay.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Team, [{
+	    key: 'openOverlay',
+	    value: function openOverlay(e) {
+	      e.stopPropagation();
+	      e.target.className = 'teammate open';
+	    }
+	  }, {
+	    key: 'closeOverlay',
+	    value: function closeOverlay(e) {
+	      e.target.className = 'teammate';
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'team' },
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
-	          'li',
-	          { id: 'mark', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(561) }),
+	          'h1',
+	          { className: 'team-title' },
+	          'The FastRope Team'
+	        ),
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'team-description' },
+	          'Our team comprised of veteran founders, socially-conscious entrepreneurs, and engineers offer strategy and solutions that drive real change. Collectively we\'ve worked with some of the world\'s most innovative companies, successfully raised capital and invested in startups.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'team-box' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
+	            'ul',
+	            { className: 'team-list' },
 	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Dr. Mark Hanson, Founder + Partner'
+	              'li',
+	              { id: 'mark', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(561) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Dr. Mark Hanson, Founder + Partner'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Mark previously founded BeClose (acquired by Alarm.com), a health tech startup combining IoT and AI into a consumer wellness service that was deployed by major payors, including United Healthcare and CMS. Mark, a highly cited reseracher in the areas of wearables, information processing, and digital health, holds faculty appointments in medicine and engineering at George Washington University.'
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Mark previously founded BeClose (acquired by Alarm.com), a health tech startup combining IoT and AI into a consumer wellness service that was deployed by major payors, including United Healthcare and CMS. Mark, a highly cited reseracher in the areas of wearables, information processing, and digital health, holds faculty appointments in medicine and engineering at George Washington University.'
+	              'li',
+	              { id: 'dhruva', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(562) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Dhruva Rajendra, Founder + Partner'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Prior to Fast Rope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'jon', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(563) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Jon Ogolo, Senior Product Manager'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Jon is Fast Rope\u2019s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'garren', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(564) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Garren Givens, Senior Tech Advisor'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Previously, Garren served as Executive Director of the Presidential Innovation Fellows Program under President Obama.  Garren has led innovation and technology projects for federal agencies and in the private sector.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'benH', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(565) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Ben Hood, PhD'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Ben Hood has been an entrepreneur and digital product manager for over a decade, most recently focused on energy and cybersecurity. He has extensive experience creating big data applications for the U.S. government, and began his career at Winamp and AOL Video. Ben has undergraduate degrees in computer engineering and physics, and a Ph.D. in astrophysics.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'andrew', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(566) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Andrew Darin, Consultant'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Before consulting for Fast Rope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'mike', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(567) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Mike Michon, Mechanical Engineer\u2028'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Michael founded a small product development firm consulting on a variety of projects, ranging from biomedical devices to mobile applications.  He later created and licensed a proprietary visual project management tool (insEYEte) to be deployed by 501c organizations including the American Red Cross and Catholic Charities.  He currently designs craniofacial implants for KLS Martin and is part of the team upstarting the manufacturing of patient specific implants in the States'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'benB', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(568) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Ben Boudaud,  Embedded Designer'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Ben is an embedded HW/FW design engineer with 8 years of experience in ultra-low power wearable and implantable medical devices. Ben holds an MS in EE and has previous system-level design experience ranging from motion tracking to non-invasive vital signs monitoring to cardiac and neuro stimulation platforms.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'stephen', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(569) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Stephen Kae, Growth Lead/ Associate'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Stephen is a brand builder and startup junkie that has consulted for a number of ventured-backed organizations. He served as the VP of Marketing at NotionTheory where helped scale the business tenfold and created partnerships with investment groups, fortune 500 companies and the U.S. government.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'partha', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(570) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Partha Rajendra, Software'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Partha is a software developer at FRL who has worked with several startups in the past. Partha holds a BA in CS and has previous experience in web applications, data extraction, and IoT.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'leah', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(571) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Leah Snider, Full Stack Creative'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Roles ranges from graphic design, photography, video and creative coordination. She\u2019s previously worked with Worn Creative, LenDePas Photography and Flavor Group.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'matt', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(572) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Matt Blank, Associate Product Manager'
+	                ),
+	                _react2.default.createElement('p', { className: 'teammate-description' })
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'dhruva', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(562) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Dhruva Rajendra, Founder + Partner'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Prior to Fast Rope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'jon', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(563) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Jon Ogolo, Senior Product Manager'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Jon is Fast Rope\u2019s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'garren', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(564) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Garren Givens, Senior Tech Advisor'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Previously, Garren served as Executive Director of the Presidential Innovation Fellows Program under President Obama.  Garren has led innovation and technology projects for federal agencies and in the private sector.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'benH', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(565) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Ben Hood, PhD'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Ben Hood has been an entrepreneur and digital product manager for over a decade, most recently focused on energy and cybersecurity. He has extensive experience creating big data applications for the U.S. government, and began his career at Winamp and AOL Video. Ben has undergraduate degrees in computer engineering and physics, and a Ph.D. in astrophysics.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'andrew', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(566) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Andrew Darin, Consultant'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Before consulting for Fast Rope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'mike', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(567) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Mike Michon, Mechanical Engineer\u2028'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Michael founded a small product development firm consulting on a variety of projects, ranging from biomedical devices to mobile applications.  He later created and licensed a proprietary visual project management tool (insEYEte) to be deployed by 501c organizations including the American Red Cross and Catholic Charities.  He currently designs craniofacial implants for KLS Martin and is part of the team upstarting the manufacturing of patient specific implants in the States'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'benB', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(568) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Ben Boudaud,  Embedded Designer'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Ben is an embedded HW/FW design engineer with 8 years of experience in ultra-low power wearable and implantable medical devices. Ben holds an MS in EE and has previous system-level design experience ranging from motion tracking to non-invasive vital signs monitoring to cardiac and neuro stimulation platforms.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'stephen', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(569) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Stephen Kae, Growth Lead/ Associate'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Stephen is a brand builder and startup junkie that has consulted for a number of ventured-backed organizations. He served as the VP of Marketing at NotionTheory where helped scale the business tenfold and created partnerships with investment groups, fortune 500 companies and the U.S. government.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'partha', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(570) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Partha Rajendra, Software'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Partha is a software developer at FRL who has worked with several startups in the past. Partha holds a BA in CS and has previous experience in web applications, data extraction, and IoT.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'leah', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(571) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Leah Snider, Full Stack Creative'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'teammate-description' },
-	              'Roles ranges from graphic design, photography, video and creative coordination. She\u2019s previously worked with Worn Creative, LenDePas Photography and Flavor Group.'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'matt', className: 'teammate' },
-	          _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(572) }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'teammate-overlay' },
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'teammate-title' },
-	              'Matt Blank, Associate Product Manager'
-	            ),
-	            _react2.default.createElement('p', { className: 'teammate-description' })
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Team;
+	}(_react2.default.Component);
 	
 	exports.default = Team;
 
@@ -35195,7 +35234,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".team-title {\n  background: #233670;\n  color: white;\n  display: block;\n  font-size: 60px;\n  margin: 0 auto;\n  padding: 200px 0;\n  text-align: center; }\n\n.team-description {\n  color: #474747;\n  display: block;\n  font-size: 30px;\n  font-weight: 300;\n  line-height: 40px;\n  margin: 85px auto 0 auto;\n  max-width: 1032px;\n  text-align: center; }\n  @media screen and (max-width: 1062px) {\n    .team-description {\n      font-size: 24px;\n      line-height: 34px;\n      margin: 75px auto 0 auto;\n      max-width: 678px; } }\n  @media screen and (max-width: 708px) {\n    .team-description {\n      font-size: 20px;\n      line-height: 30px;\n      margin: 65px auto 0 auto;\n      max-width: calc(100% - 100px); } }\n  @media screen and (max-width: 500px) {\n    .team-description {\n      font-size: 18px;\n      line-height: 28px;\n      margin: 60px auto 0 auto;\n      max-width: calc(100% - 60px); } }\n\n.team-box {\n  display: block;\n  margin: 60px auto;\n  max-width: 1062px; }\n  @media screen and (max-width: 1062px) {\n    .team-box {\n      margin: 50px auto;\n      max-width: 708px; } }\n  @media screen and (max-width: 708px) {\n    .team-box {\n      margin: 60px auto;\n      max-width: 354px; } }\n  .team-box .team-list .teammate {\n    display: inline-block;\n    list-style: none;\n    margin: 25px;\n    position: relative; }\n    @media screen and (max-width: 708px) {\n      .team-box .team-list .teammate {\n        display: block;\n        margin: 50px auto;\n        width: 304px; } }\n    .team-box .team-list .teammate:hover .teammate-overlay {\n      opacity: 1; }\n    .team-box .team-list .teammate:focus .teammate-overlay {\n      opacity: 1; }\n    .team-box .team-list .teammate#mike .teammate-overlay .teammate-title {\n      margin-top: 30px; }\n    .team-box .team-list .teammate .teammate-pic {\n      height: 284px;\n      width: 304px; }\n    .team-box .team-list .teammate .teammate-overlay {\n      background: rgba(70, 70, 70, 0.8);\n      box-sizing: content-box;\n      height: 284px;\n      left: 0;\n      opacity: 0;\n      position: absolute;\n      text-align: center;\n      top: 0;\n      width: 100%;\n      -webkit-transition: all 0.2s;\n      -moz-transition: all 0.2s;\n      -o-transition: all 0.2s;\n      transition: all 0.2s; }\n      .team-box .team-list .teammate .teammate-overlay .teammate-title {\n        color: white;\n        font-family: 'Open Sans', sans-serif;\n        font-size: 16px;\n        font-weight: 600;\n        margin: 50px 0 0 0; }\n      .team-box .team-list .teammate .teammate-overlay .teammate-description {\n        color: white;\n        font-family: 'Open Sans', sans-serif;\n        font-size: 12px;\n        font-weight: 300;\n        margin: 4px 16px; }\n", ""]);
+	exports.push([module.id, ".team-title {\n  background: #233670;\n  color: white;\n  display: block;\n  font-size: 60px;\n  margin: 0 auto;\n  padding: 200px 0;\n  text-align: center; }\n\n.team-description {\n  color: #474747;\n  display: block;\n  font-size: 30px;\n  font-weight: 300;\n  line-height: 40px;\n  margin: 85px auto 0 auto;\n  max-width: 1032px;\n  text-align: center; }\n  @media screen and (max-width: 1062px) {\n    .team-description {\n      font-size: 24px;\n      line-height: 34px;\n      margin: 75px auto 0 auto;\n      max-width: 678px; } }\n  @media screen and (max-width: 708px) {\n    .team-description {\n      font-size: 20px;\n      line-height: 30px;\n      margin: 65px auto 0 auto;\n      max-width: calc(100% - 100px); } }\n  @media screen and (max-width: 500px) {\n    .team-description {\n      font-size: 18px;\n      line-height: 28px;\n      margin: 60px auto 0 auto;\n      max-width: calc(100% - 60px); } }\n\n.team-box {\n  display: block;\n  margin: 60px auto;\n  max-width: 1062px; }\n  @media screen and (max-width: 1062px) {\n    .team-box {\n      margin: 50px auto;\n      max-width: 708px; } }\n  @media screen and (max-width: 708px) {\n    .team-box {\n      margin: 60px auto;\n      max-width: 354px; } }\n  .team-box .team-list .teammate {\n    display: inline-block;\n    list-style: none;\n    margin: 25px;\n    outline: none;\n    position: relative; }\n    @media screen and (max-width: 708px) {\n      .team-box .team-list .teammate {\n        display: block;\n        margin: 50px auto;\n        width: 304px; } }\n    .team-box .team-list .teammate:hover .teammate-overlay {\n      opacity: 1; }\n    .team-box .team-list .teammate.open .teammate-overlay {\n      opacity: 1; }\n    .team-box .team-list .teammate#mike .teammate-overlay .teammate-title {\n      margin-top: 30px; }\n    .team-box .team-list .teammate .teammate-pic {\n      height: 284px;\n      width: 304px; }\n    .team-box .team-list .teammate .teammate-overlay {\n      background: rgba(70, 70, 70, 0.8);\n      box-sizing: content-box;\n      height: 284px;\n      left: 0;\n      opacity: 0;\n      pointer-events: none;\n      position: absolute;\n      text-align: center;\n      top: 0;\n      width: 100%;\n      -webkit-transition: all 0.2s;\n      -moz-transition: all 0.2s;\n      -o-transition: all 0.2s;\n      transition: all 0.2s; }\n      .team-box .team-list .teammate .teammate-overlay .teammate-title {\n        color: white;\n        font-family: 'Open Sans', sans-serif;\n        font-size: 16px;\n        font-weight: 600;\n        margin: 50px 0 0 0; }\n      .team-box .team-list .teammate .teammate-overlay .teammate-description {\n        color: white;\n        font-family: 'Open Sans', sans-serif;\n        font-size: 12px;\n        font-weight: 300;\n        margin: 4px 16px; }\n", ""]);
 	
 	// exports
 

@@ -60,6 +60,7 @@
       display: inline-block;
       list-style: none;
       margin: 25px;
+      outline: none;
       position: relative;
       @media screen and (max-width: $col-1){
         display: block;
@@ -73,7 +74,7 @@
         }
       }
 
-      &:focus{
+      &.open{
         .teammate-overlay{
           opacity: 1;
         }
@@ -99,6 +100,7 @@
         height: 284px;
         left: 0;
         opacity: 0;
+        pointer-events: none;
         position: absolute;
         text-align: center;
         top: 0;
