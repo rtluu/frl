@@ -11,6 +11,9 @@
     @media screen and (max-width: $small){
       padding: 20px 30px;
     }
+    @media screen and (max-width: $phone){
+      padding: 20px 20px;
+    }
 
     #fr-logo{
       background: url('../img/logo/fr-logo-full.svg');
@@ -35,6 +38,14 @@
     .right{
       right: 45px;
       top: 44px;
+      @media screen and (max-width: $small){
+        right: 30px;
+        top: 35px;
+      }
+      @media screen and (max-width: $phone){
+        right: 20px;
+        top: 35px;
+      }
     }
   }
 } //End Unique Homepage Styling
@@ -45,6 +56,9 @@
   position: absolute;
   width: 100%;
   z-index: 100;
+  @media screen and (max-width: $phone){
+    padding: 20px 20px;
+  }
 
   .left{
     display: inline-block;
@@ -77,6 +91,10 @@
       right: 30px;
       top: 35px;
     }
+    @media screen and (max-width: $phone){
+      right: 20px;
+      top: 35px;
+    }
 
     .page-link{
       color: white;
@@ -89,6 +107,11 @@
         font-size: 16px;
         margin: 0 5px;
         padding: 10px 5px;
+      }
+      @media screen and (max-width: $phone){
+        font-size: 14px;
+        margin: 0 4px;
+        padding: 10px 4px;
       }
 
       &:hover{
