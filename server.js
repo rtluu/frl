@@ -4,7 +4,6 @@ require.extensions['.scss'] = function () {};
 const express = require('express');
 const path    = require('path');
 const app     = express();
-const port    = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -17,6 +16,6 @@ app.set('view engine', 'jsx');
 // Set up Routes for the application
 require('./src/routes.jsx');
 
-app.listen(port, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log('App running on port ' + port);
 });
