@@ -33790,6 +33790,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouterDom = __webpack_require__(480);
+	
 	var _Nav = __webpack_require__(522);
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
@@ -33838,8 +33840,8 @@
 	          'Fastrope is an elite team of entrepreneurial builders who partner with world-class innovators to make crazy ideas real.'
 	        ),
 	        _react2.default.createElement(
-	          'a',
-	          { className: 'hero-button-link', href: '/contact' },
+	          _reactRouterDom.Link,
+	          { to: '/contact', className: 'hero-button-link' },
 	          _react2.default.createElement(
 	            'button',
 	            { id: 'hero-button' },
@@ -33997,8 +33999,8 @@
 	      'div',
 	      { id: 'work', className: 'work-block' },
 	      _react2.default.createElement(
-	        'a',
-	        { href: '/verite', id: 'labor', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/verite', id: 'labor', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34006,8 +34008,8 @@
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { href: '/envision', id: 'wind', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/envision', id: 'wind', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34015,8 +34017,8 @@
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { href: '/networkforgood', id: 'crowdsourcing', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/networkforgood', id: 'crowdsourcing', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34024,8 +34026,8 @@
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { href: '/gwmfa', id: 'healthcare', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/gwmfa', id: 'healthcare', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34033,8 +34035,8 @@
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { href: '/wodify', id: 'fitness', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/wodify', id: 'fitness', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34044,8 +34046,8 @@
 	        )
 	      ),
 	      _react2.default.createElement(
-	        'a',
-	        { id: 'unicorn', className: 'work-item' },
+	        _reactRouterDom.Link,
+	        { to: '/', id: 'unicorn', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -34061,8 +34063,8 @@
 	        { className: 'people-text' },
 	        'Meet our team of passionate and brilliant builders, including scientists, technologists, and creatives who are as inspiring as their work.',
 	        _react2.default.createElement(
-	          'a',
-	          { href: '/team' },
+	          _reactRouterDom.Link,
+	          { to: '/team' },
 	          _react2.default.createElement('span', { id: 'team-arrow' })
 	        )
 	      )
@@ -34091,8 +34093,8 @@
 	          ', so...'
 	        ),
 	        _react2.default.createElement(
-	          'a',
-	          { className: 'cta-button-link', href: '#contact' },
+	          _reactRouterDom.Link,
+	          { to: '/contact', className: 'cta-button-link', href: '#contact' },
 	          _react2.default.createElement(
 	            'button',
 	            { id: 'cta-button' },
@@ -34170,9 +34172,9 @@
 	          'div',
 	          { className: 'right' },
 	          _react2.default.createElement(
-	            _reactRouterDom.Link,
-	            { to: '/#work', className: 'page-link' },
-	            'Work '
+	            'a',
+	            { href: '/#work', className: 'page-link' },
+	            'Work'
 	          ),
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
@@ -34570,6 +34572,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouterDom = __webpack_require__(480);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34611,8 +34615,8 @@
 	          'div',
 	          { className: 'right' },
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'page-link', href: '/contact' },
+	            _reactRouterDom.Link,
+	            { to: '/contact', className: 'page-link' },
 	            'Contact'
 	          )
 	        )
