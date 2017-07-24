@@ -100,7 +100,7 @@ const Home = (props) => {
         <Link to="/wodify" id="fitness" className="work-item">
           <h4 className="work-text">Supercharging human<br></br>ability</h4>
         </Link>
-        <Link to="/" id="unicorn" className="work-item">
+        <Link to="/upside" id="unicorn" className="work-item">
           <h4 className="work-text">Creating unicorn startups</h4>
         </Link>
       </div>

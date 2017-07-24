@@ -33,6 +33,13 @@
     background-size: cover;
   }
 
+  &#upside{
+    background: url('../img/case/upside-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   &#envision{
     background: url('../img/case/envision-bg.png');
     background-position: center;
@@ -222,7 +229,13 @@
           position: relative;
           @include transform( translateX(-50%));
           @media screen and (max-width: $stacked){
+            left: auto;
             padding: 5px 5px 5px 0;
+            @include transform( translateX(0));
+          }
+          @media screen and (max-width: $small){
+            left: 50%;
+            @include transform( translateX(-50%));
           }
 
           &:hover{

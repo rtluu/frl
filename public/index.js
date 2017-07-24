@@ -65,7 +65,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	//Stix Local Fonts
-	__webpack_require__(603);
+	__webpack_require__(606);
 	
 	var Route = _reactRouterDom.BrowserRouter.Route;
 	
@@ -33740,25 +33740,29 @@
 	
 	var _Wodify2 = _interopRequireDefault(_Wodify);
 	
-	var _GWMFA = __webpack_require__(592);
+	var _GWMFA = __webpack_require__(593);
 	
 	var _GWMFA2 = _interopRequireDefault(_GWMFA);
 	
-	var _Verite = __webpack_require__(595);
+	var _Verite = __webpack_require__(596);
 	
 	var _Verite2 = _interopRequireDefault(_Verite);
 	
-	var _NetworkForGood = __webpack_require__(598);
+	var _NetworkForGood = __webpack_require__(599);
 	
 	var _NetworkForGood2 = _interopRequireDefault(_NetworkForGood);
 	
-	var _Envision = __webpack_require__(601);
+	var _Envision = __webpack_require__(602);
 	
 	var _Envision2 = _interopRequireDefault(_Envision);
 	
+	var _Upside = __webpack_require__(604);
+	
+	var _Upside2 = _interopRequireDefault(_Upside);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// Import Containers
+	//Case Studies
 	exports.default = function () {
 	  return _react2.default.createElement(
 	    'div',
@@ -33770,11 +33774,12 @@
 	    _react2.default.createElement(_reactRouterDom.Route, { path: '/gwmfa', component: _GWMFA2.default }),
 	    _react2.default.createElement(_reactRouterDom.Route, { path: '/verite', component: _Verite2.default }),
 	    _react2.default.createElement(_reactRouterDom.Route, { path: '/networkforgood', component: _NetworkForGood2.default }),
-	    _react2.default.createElement(_reactRouterDom.Route, { path: '/envision', component: _Envision2.default })
+	    _react2.default.createElement(_reactRouterDom.Route, { path: '/envision', component: _Envision2.default }),
+	    _react2.default.createElement(_reactRouterDom.Route, { path: '/upside', component: _Upside2.default })
 	  );
 	};
 	
-	//Case Studies
+	// Import Containers
 
 /***/ }),
 /* 521 */
@@ -34047,7 +34052,7 @@
 	      ),
 	      _react2.default.createElement(
 	        _reactRouterDom.Link,
-	        { to: '/', id: 'unicorn', className: 'work-item' },
+	        { to: '/upside', id: 'unicorn', className: 'work-item' },
 	        _react2.default.createElement(
 	          'h4',
 	          { className: 'work-text' },
@@ -35906,7 +35911,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(591) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(592) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -35994,7 +35999,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".case-header {\n  display: block;\n  width: 100%; }\n  .case-header#wodify {\n    background: url(" + __webpack_require__(586) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#gwmfa {\n    background: url(" + __webpack_require__(587) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#verite {\n    background: url(" + __webpack_require__(588) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#networkforgood {\n    background: url(" + __webpack_require__(589) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#envision {\n    background: url(" + __webpack_require__(590) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header .case-hero {\n    margin: 0 auto;\n    padding: 200px 0 245px 0;\n    text-align: center; }\n    @media screen and (max-width: 1260px) {\n      .case-header .case-hero {\n        padding: 180px 0 205px 0; } }\n    @media screen and (max-width: 750px) {\n      .case-header .case-hero {\n        padding: 170px 0 170px 0; } }\n    @media screen and (max-width: 500px) {\n      .case-header .case-hero {\n        padding: 160px 0 150px 0; } }\n    .case-header .case-hero .case-headline {\n      box-sizing: content-box;\n      color: white;\n      display: block;\n      font-size: 60px;\n      font-weight: 900;\n      margin: 0 auto;\n      padding-bottom: 90px; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-headline {\n          font-size: 54px;\n          padding-bottom: 75px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-headline {\n          font-size: 48px;\n          padding-bottom: 65px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-headline {\n          font-size: 44px;\n          padding-bottom: 55px; } }\n    .case-header .case-hero .case-tagline {\n      color: white;\n      font-size: 27px;\n      font-weight: 300; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 21px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 18px; } }\n\n.case-content {\n  display: block; }\n  .case-content .content-main {\n    display: inline-block;\n    margin: 100px 10% 100px 140px;\n    width: 675px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-main {\n        display: block;\n        margin: 100px auto;\n        width: 600px; } }\n    @media screen and (max-width: 750px) {\n      .case-content .content-main {\n        margin: 80px auto;\n        width: 450px; } }\n    @media screen and (max-width: 500px) {\n      .case-content .content-main {\n        margin: 60px auto;\n        width: calc(100% - 50px); } }\n    .case-content .content-main .text-header {\n      color: #393939;\n      font-size: 24px;\n      font-weight: 600;\n      line-height: 28px;\n      margin-bottom: 14px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text-header {\n          font-size: 20px;\n          line-height: 24px;\n          margin-bottom: 12px; } }\n    .case-content .content-main .text {\n      color: #393939;\n      font-size: 20px;\n      font-weight: 300;\n      line-height: 28px;\n      margin-bottom: 20px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text {\n          font-size: 16px;\n          line-height: 24px;\n          margin-bottom: 16px; } }\n    .case-content .content-main .example {\n      display: block;\n      height: 250px;\n      margin: 50px auto 45px auto; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .example {\n          height: auto;\n          width: 100%; } }\n    .case-content .content-main .img {\n      background: #cccccc;\n      display: block;\n      height: 250px;\n      margin: 46px 0 60px;\n      width: 100%; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .img {\n          margin: 40px 0 50px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .img {\n          margin: 30px 0 40px; } }\n  .case-content .content-side {\n    display: inline-block;\n    margin: 100px 40px;\n    vertical-align: top;\n    width: 230px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        background: #ededed;\n        display: block;\n        margin: 0;\n        padding: 100px 0;\n        width: 100%; } }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        padding: 60px 0; } }\n    .case-content .content-side .logo-block {\n      display: block;\n      margin: 0 auto;\n      position: relative;\n      width: 160px; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block {\n          width: 600px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block {\n          width: 450px; } }\n      @media screen and (max-width: 500px) {\n        .case-content .content-side .logo-block {\n          width: calc(100% - 50px); } }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: inline-block; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: block; } }\n      .case-content .content-side .logo-block .logo-inner .logo {\n        display: block;\n        width: 160px; }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .logo {\n            margin: 0 auto; } }\n      .case-content .content-side .logo-block .logo-inner .url {\n        cursor: pointer;\n        display: inline-block;\n        left: 50%;\n        margin: 20px 0;\n        padding: 5px;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            padding: 5px 5px 5px 0; } }\n        .case-content .content-side .logo-block .logo-inner .url:hover .url-text {\n          color: #0704CC;\n          text-decoration: underline; }\n        .case-content .content-side .logo-block .logo-inner .url .url-text {\n          color: #323232;\n          font-size: 28px;\n          font-weight: 400;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 750px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 24px; } }\n          @media screen and (max-width: 500px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 20px; } }\n      .case-content .content-side .logo-block .logo-inner .what-we-did {\n        color: #393939;\n        display: block;\n        margin: 0 auto;\n        text-align: center; }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: left; } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: center; } }\n      .case-content .content-side .logo-block .share-link {\n        display: inline-block;\n        left: 50%;\n        margin: 40px 0;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .share-link {\n            left: auto;\n            position: absolute;\n            right: 0;\n            vertical-align: top;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .share-link {\n            display: inline-block;\n            left: 50%;\n            margin: 40px 0 0 0;\n            position: relative;\n            right: auto;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .share-link .share-button {\n          border: 0;\n          background: #02008B;\n          color: white;\n          cursor: pointer;\n          font-size: 14px;\n          outline: none;\n          padding: 24px 72px;\n          white-space: nowrap;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          .case-content .content-side .logo-block .share-link .share-button:hover {\n            opacity: 0.8; }\n    .case-content .content-side .testimony-block {\n      display: none;\n      margin: 60px auto 0 auto;\n      max-width: 230px; }\n      .case-content .content-side .testimony-block .testimony-pic {\n        background: #6a6a6a;\n        display: block;\n        height: 150px;\n        margin: 0 auto 20px auto;\n        width: 150px; }\n      .case-content .content-side .testimony-block .testimony-text {\n        color: #393939;\n        font-size: 14px;\n        font-weight: 400;\n        font-style: italic;\n        line-height: 20px;\n        margin-bottom: 8px;\n        text-align: center; }\n      .case-content .content-side .testimony-block .testimony-source {\n        color: #393939;\n        font-size: 12px;\n        font-weight: 400;\n        text-align: right; }\n", ""]);
+	exports.push([module.id, ".case-header {\n  display: block;\n  width: 100%; }\n  .case-header#wodify {\n    background: url(" + __webpack_require__(586) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#gwmfa {\n    background: url(" + __webpack_require__(587) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#verite {\n    background: url(" + __webpack_require__(588) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#networkforgood {\n    background: url(" + __webpack_require__(589) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#upside {\n    background: url(" + __webpack_require__(590) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#envision {\n    background: url(" + __webpack_require__(591) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header .case-hero {\n    margin: 0 auto;\n    padding: 200px 0 245px 0;\n    text-align: center; }\n    @media screen and (max-width: 1260px) {\n      .case-header .case-hero {\n        padding: 180px 0 205px 0; } }\n    @media screen and (max-width: 750px) {\n      .case-header .case-hero {\n        padding: 170px 0 170px 0; } }\n    @media screen and (max-width: 500px) {\n      .case-header .case-hero {\n        padding: 160px 0 150px 0; } }\n    .case-header .case-hero .case-headline {\n      box-sizing: content-box;\n      color: white;\n      display: block;\n      font-size: 60px;\n      font-weight: 900;\n      margin: 0 auto;\n      padding-bottom: 90px; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-headline {\n          font-size: 54px;\n          padding-bottom: 75px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-headline {\n          font-size: 48px;\n          padding-bottom: 65px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-headline {\n          font-size: 44px;\n          padding-bottom: 55px; } }\n    .case-header .case-hero .case-tagline {\n      color: white;\n      font-size: 27px;\n      font-weight: 300; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 21px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 18px; } }\n\n.case-content {\n  display: block; }\n  .case-content .content-main {\n    display: inline-block;\n    margin: 100px 10% 100px 140px;\n    width: 675px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-main {\n        display: block;\n        margin: 100px auto;\n        width: 600px; } }\n    @media screen and (max-width: 750px) {\n      .case-content .content-main {\n        margin: 80px auto;\n        width: 450px; } }\n    @media screen and (max-width: 500px) {\n      .case-content .content-main {\n        margin: 60px auto;\n        width: calc(100% - 50px); } }\n    .case-content .content-main .text-header {\n      color: #393939;\n      font-size: 24px;\n      font-weight: 600;\n      line-height: 28px;\n      margin-bottom: 14px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text-header {\n          font-size: 20px;\n          line-height: 24px;\n          margin-bottom: 12px; } }\n    .case-content .content-main .text {\n      color: #393939;\n      font-size: 20px;\n      font-weight: 300;\n      line-height: 28px;\n      margin-bottom: 20px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text {\n          font-size: 16px;\n          line-height: 24px;\n          margin-bottom: 16px; } }\n    .case-content .content-main .example {\n      display: block;\n      height: 250px;\n      margin: 50px auto 45px auto; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .example {\n          height: auto;\n          width: 100%; } }\n    .case-content .content-main .img {\n      background: #cccccc;\n      display: block;\n      height: 250px;\n      margin: 46px 0 60px;\n      width: 100%; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .img {\n          margin: 40px 0 50px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .img {\n          margin: 30px 0 40px; } }\n  .case-content .content-side {\n    display: inline-block;\n    margin: 100px 40px;\n    vertical-align: top;\n    width: 230px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        background: #ededed;\n        display: block;\n        margin: 0;\n        padding: 100px 0;\n        width: 100%; } }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        padding: 60px 0; } }\n    .case-content .content-side .logo-block {\n      display: block;\n      margin: 0 auto;\n      position: relative;\n      width: 160px; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block {\n          width: 600px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block {\n          width: 450px; } }\n      @media screen and (max-width: 500px) {\n        .case-content .content-side .logo-block {\n          width: calc(100% - 50px); } }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: inline-block; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: block; } }\n      .case-content .content-side .logo-block .logo-inner .logo {\n        display: block;\n        width: 160px; }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .logo {\n            margin: 0 auto; } }\n      .case-content .content-side .logo-block .logo-inner .url {\n        cursor: pointer;\n        display: inline-block;\n        left: 50%;\n        margin: 20px 0;\n        padding: 5px;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: auto;\n            padding: 5px 5px 5px 0;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: 50%;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .logo-inner .url:hover .url-text {\n          color: #0704CC;\n          text-decoration: underline; }\n        .case-content .content-side .logo-block .logo-inner .url .url-text {\n          color: #323232;\n          font-size: 28px;\n          font-weight: 400;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 750px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 24px; } }\n          @media screen and (max-width: 500px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 20px; } }\n      .case-content .content-side .logo-block .logo-inner .what-we-did {\n        color: #393939;\n        display: block;\n        margin: 0 auto;\n        text-align: center; }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: left; } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: center; } }\n      .case-content .content-side .logo-block .share-link {\n        display: inline-block;\n        left: 50%;\n        margin: 40px 0;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .share-link {\n            left: auto;\n            position: absolute;\n            right: 0;\n            vertical-align: top;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .share-link {\n            display: inline-block;\n            left: 50%;\n            margin: 40px 0 0 0;\n            position: relative;\n            right: auto;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .share-link .share-button {\n          border: 0;\n          background: #02008B;\n          color: white;\n          cursor: pointer;\n          font-size: 14px;\n          outline: none;\n          padding: 24px 72px;\n          white-space: nowrap;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          .case-content .content-side .logo-block .share-link .share-button:hover {\n            opacity: 0.8; }\n    .case-content .content-side .testimony-block {\n      display: none;\n      margin: 60px auto 0 auto;\n      max-width: 230px; }\n      .case-content .content-side .testimony-block .testimony-pic {\n        background: #6a6a6a;\n        display: block;\n        height: 150px;\n        margin: 0 auto 20px auto;\n        width: 150px; }\n      .case-content .content-side .testimony-block .testimony-text {\n        color: #393939;\n        font-size: 14px;\n        font-weight: 400;\n        font-style: italic;\n        line-height: 20px;\n        margin-bottom: 8px;\n        text-align: center; }\n      .case-content .content-side .testimony-block .testimony-source {\n        color: #393939;\n        font-size: 12px;\n        font-weight: 400;\n        text-align: right; }\n", ""]);
 	
 	// exports
 
@@ -36027,16 +36032,22 @@
 /* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "envision-bg.png";
+	module.exports = __webpack_require__.p + "upside-bg.png";
 
 /***/ }),
 /* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "wodify-logo.png";
+	module.exports = __webpack_require__.p + "envision-bg.png";
 
 /***/ }),
 /* 592 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "wodify-logo.png";
+
+/***/ }),
+/* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36127,7 +36138,7 @@
 	              { className: 'text' },
 	              'George Washington University Medical Faculty Associates (GW MFA) operates over 50 practices in the Washington, DC area. They wanted to better understand their risk exposure so they could formulate a data-driven growth strategy. This required analyzing large sample sets of data and comparing historical trends.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(593) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(594) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
@@ -36153,7 +36164,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(594) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(595) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -36207,19 +36218,19 @@
 	exports.default = GWMFA;
 
 /***/ }),
-/* 593 */
+/* 594 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "gwmfa-ex.png";
 
 /***/ }),
-/* 594 */
+/* 595 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "gwmfa-logo.png";
 
 /***/ }),
-/* 595 */
+/* 596 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36310,7 +36321,7 @@
 	              { className: 'text' },
 	              'Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(596) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(597) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
@@ -36331,7 +36342,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(597) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(598) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -36385,19 +36396,19 @@
 	exports.default = Verite;
 
 /***/ }),
-/* 596 */
+/* 597 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "verite-ex.png";
 
 /***/ }),
-/* 597 */
+/* 598 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "verite-logo.png";
 
 /***/ }),
-/* 598 */
+/* 599 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36488,7 +36499,7 @@
 	              { className: 'text' },
 	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(599) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(600) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
@@ -36514,7 +36525,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(600) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(601) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -36568,19 +36579,19 @@
 	exports.default = NetworkForGood;
 
 /***/ }),
-/* 599 */
+/* 600 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "networkforgood-ex.png";
 
 /***/ }),
-/* 600 */
+/* 601 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "networkforgood-logo.png";
 
 /***/ }),
-/* 601 */
+/* 602 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36687,7 +36698,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(602) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(603) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -36741,19 +36752,195 @@
 	exports.default = Envision;
 
 /***/ }),
-/* 602 */
+/* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "envision-logo.png";
 
 /***/ }),
-/* 603 */
+/* 604 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(297);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Nav = __webpack_require__(522);
+	
+	var _Nav2 = _interopRequireDefault(_Nav);
+	
+	var _Footer = __webpack_require__(529);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	__webpack_require__(584);
+	
+	var Upside = function (_React$Component) {
+	  _inherits(Upside, _React$Component);
+	
+	  function Upside(props) {
+	    _classCallCheck(this, Upside);
+	
+	    var _this = _possibleConstructorReturn(this, (Upside.__proto__ || Object.getPrototypeOf(Upside)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(Upside, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'upside', className: 'case-header' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'case-hero' },
+	            _react2.default.createElement(
+	              'h1',
+	              { className: 'case-headline' },
+	              'UPSIDE'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Creating unicorn startups'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Travel Reinvented'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Founded by the Creators of Priceline.com, Upside allows business travelers to easily customize travel packages and redeem rewards every time they travel. While the Upside team has decades of experience in the travel industry, they came to us to help lead their growth initiatives and further innovate their product by embedding data-driven solutions.'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Our Solution'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Our data science team was able to create a tool that searched through billions of flight and hotel combinations to deliver the ideal travel packages to business travelers and rewards based on mileage traveled. An elastic pricing algorithm was also put in place for balancing traveler preferences, pricing of hotels, pricing of airlines and overall demand. To ensure any bad actors from exploiting heavily discounted fares we also incorporated a fraud detection and mitigation system.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'On the growth side, we acted as a stand-in Growth Lead, walking the team through a series of experiment sprints to gain as many insights about their customers and initial market traction.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-side' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(605) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'upside.com'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'Categories: Data science, product, growth'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Upside;
+	}(_react2.default.Component);
+	
+	exports.default = Upside;
+
+/***/ }),
+/* 605 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "upside-logo.png";
+
+/***/ }),
+/* 606 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(604);
+	var content = __webpack_require__(607);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(528)(content, {});
@@ -36773,7 +36960,7 @@
 	}
 
 /***/ }),
-/* 604 */
+/* 607 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(525)();
@@ -36781,31 +36968,31 @@
 	
 	
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Stix-BoldItalic';\n  src: url(" + __webpack_require__(605) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: italic; }\n\n@font-face {\n  font-family: 'Stix-Italic';\n  src: url(" + __webpack_require__(606) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Regular';\n  src: url(" + __webpack_require__(607) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Bold';\n  src: url(" + __webpack_require__(608) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Stix-BoldItalic';\n  src: url(" + __webpack_require__(608) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: italic; }\n\n@font-face {\n  font-family: 'Stix-Italic';\n  src: url(" + __webpack_require__(609) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Regular';\n  src: url(" + __webpack_require__(610) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Bold';\n  src: url(" + __webpack_require__(611) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 605 */
+/* 608 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-BoldItalic.woff";
 
 /***/ }),
-/* 606 */
+/* 609 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Italic.woff";
 
 /***/ }),
-/* 607 */
+/* 610 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Regular.woff";
 
 /***/ }),
-/* 608 */
+/* 611 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Bold.woff";

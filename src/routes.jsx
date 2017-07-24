@@ -12,6 +12,7 @@ import GWMFA from './containers/case/GWMFA.jsx';
 import Verite from './containers/case/Verite.jsx';
 import NetworkForGood from './containers/case/NetworkForGood.jsx';
 import Envision from './containers/case/Envision.jsx';
+import Upside from './containers/case/Upside.jsx';
 
 export default () => (
   <div>
@@ -24,5 +25,6 @@ export default () => (
     <Route path="/verite" component={Verite} />
     <Route path="/networkforgood" component={NetworkForGood} />
     <Route path="/envision" component={Envision} />
+    <Route path="/upside" component={Upside} />
   </div>
 );
