@@ -88,17 +88,17 @@ const Home = (props) => {
         <Link to="/verite" id="labor" className="work-item">
           <h4 className="work-text">Ending human trafficking</h4>
         </Link>
-        <Link to="/networkforgood" id="crowdsourcing" className="work-item">
-          <h4 className="work-text">Accelerating micro- philanthropy</h4>
-        </Link>
         <Link to="/gwmfa" id="healthcare" className="work-item">
           <h4 className="work-text">Disrupting healtcare delivery</h4>
         </Link>
-        <Link to="/wodify" id="fitness" className="work-item">
-          <h4 className="work-text">Supercharging human<br></br>ability</h4>
+        <Link to="/networkforgood" id="crowdsourcing" className="work-item">
+          <h4 className="work-text">Accelerating micro- philanthropy</h4>
         </Link>
         <Link to="/upside" id="unicorn" className="work-item">
           <h4 className="work-text">Creating unicorn startups</h4>
+        </Link>
+        <Link to="/wodify" id="fitness" className="work-item">
+          <h4 className="work-text">Supercharging human<br></br>ability</h4>
         </Link>
         <Link to="/envision" id="wind" className="work-item">
           <h4 className="work-text">Increasing wind power capacity</h4>
