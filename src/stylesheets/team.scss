@@ -73,6 +73,12 @@
         }
       }
 
+      &:focus{
+        .teammate-overlay{
+          opacity: 1;
+        }
+      }
+
       //Fix for Mike's Long Description
       &#mike{
         .teammate-overlay{
