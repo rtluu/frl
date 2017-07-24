@@ -7,8 +7,9 @@ const app     = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set view path
-app.set('views', path.join(__dirname, 'app', 'views'));
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 // set up ejs for templating. You can use whatever
 app.set('view engine', 'jsx');
