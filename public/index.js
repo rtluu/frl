@@ -34127,6 +34127,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouterDom = __webpack_require__(480);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34168,18 +34170,18 @@
 	          'div',
 	          { className: 'right' },
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'page-link', href: '/#work' },
-	            'Work'
+	            _reactRouterDom.Link,
+	            { to: '/#work', className: 'page-link' },
+	            'Work '
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'page-link', href: '/team' },
+	            _reactRouterDom.Link,
+	            { to: '/team', className: 'page-link', href: '/team' },
 	            'Team'
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'page-link', href: '/contact' },
+	            _reactRouterDom.Link,
+	            { to: '/contact', className: 'page-link' },
 	            'Contact'
 	          )
 	        )

@@ -1,9 +1,10 @@
 require('../stylesheets/app.scss');
 require('../stylesheets/home.scss');
 
-import React from 'react'
-import Nav from '../components/Nav.jsx'
-import Footer from '../components/Footer.jsx'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Nav from '../components/Nav.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Home = (props) => {
   return (
@@ -84,24 +85,24 @@ const Home = (props) => {
       </div>
 
       <div id="work" className="work-block">
-        <a href="/verite" id="labor" className="work-item">
+        <Link to="/verite" id="labor" className="work-item">
           <h4 className="work-text">Ending human trafficking</h4>
-        </a>
-        <a href="/envision" id="wind" className="work-item">
+        </Link>
+        <Link to="/envision" id="wind" className="work-item">
           <h4 className="work-text">Increasing wind power capacity</h4>
-        </a>
-        <a href="/networkforgood" id="crowdsourcing" className="work-item">
+        </Link>
+        <Link to="/networkforgood" id="crowdsourcing" className="work-item">
           <h4 className="work-text">Accelerating micro- philanthropy</h4>
-        </a>
-        <a href="/gwmfa" id="healthcare" className="work-item">
+        </Link>
+        <Link href="/gwmfa" id="healthcare" className="work-item">
           <h4 className="work-text">Disrupting healtcare delivery</h4>
-        </a>
-        <a href="/wodify" id="fitness" className="work-item">
+        </Link>
+        <Link href="/wodify" id="fitness" className="work-item">
           <h4 className="work-text">Supercharging human<br></br>ability</h4>
-        </a>
-        <a id="unicorn" className="work-item">
+        </Link>
+        <Link id="unicorn" className="work-item">
           <h4 className="work-text">Creating unicorn startups</h4>
-        </a>
+        </Link>
       </div>
 
       <div className="people-block">

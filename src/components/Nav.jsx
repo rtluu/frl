@@ -1,6 +1,7 @@
 require('../stylesheets/nav.scss');
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
  export default class Nav extends React.Component {
 
@@ -20,9 +21,9 @@ import React from 'react';
           </a>
         </div>
         <div className="right">
-          <a className="page-link" href="/#work">Work</a>
-          <a className="page-link" href="/team">Team</a>
-          <a className="page-link" href="/contact">Contact</a>
+          <Link to="/#work" className="page-link">Work </Link>
+          <Link to="/team" className="page-link" href="/team">Team</Link>
+          <Link to="/contact" className="page-link">Contact</Link>
         </div>
       </nav>
     );

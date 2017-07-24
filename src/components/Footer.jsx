@@ -1,6 +1,7 @@
 require('../stylesheets/footer.scss');
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
  export default class Nav extends React.Component {
 
@@ -18,7 +19,7 @@ import React from 'react';
           <p>Copyright FastRope Labs 2017.</p>
         </div>
         <div className="right">
-          <a className="page-link" href="/contact">Contact</a>
+          <Link to="/contact" className="page-link">Contact</Link>
         </div>
       </footer>
     );
