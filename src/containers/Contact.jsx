@@ -13,6 +13,11 @@ export default class Contact extends React.Component {
     };
 
   }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     // Scroll to the top of the page to show the status message.

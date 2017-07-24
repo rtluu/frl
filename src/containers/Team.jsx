@@ -14,6 +14,10 @@ export default class Team extends React.Component {
     this.closeOverlay = this.closeOverlay.bind(this);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   openOverlay(e){
     e.stopPropagation();
     e.target.className = 'teammate open';

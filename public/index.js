@@ -34930,6 +34930,11 @@
 	  }
 	
 	  _createClass(Team, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
 	    key: 'openOverlay',
 	    value: function openOverlay(e) {
 	      e.stopPropagation();
@@ -35359,6 +35364,11 @@
 	  }
 	
 	  _createClass(Contact, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
 	    key: 'handleSubmit',
 	    value: function handleSubmit(event) {
 	      event.preventDefault();
@@ -35793,6 +35803,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -35807,114 +35819,143 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(584);
 	
-	var Wodify = function Wodify(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'wodify', className: 'case-header' },
-	      _react2.default.createElement(
+	var Wodify = function (_React$Component) {
+	  _inherits(Wodify, _React$Component);
+	
+	  function Wodify(props) {
+	    _classCallCheck(this, Wodify);
+	
+	    var _this = _possibleConstructorReturn(this, (Wodify.__proto__ || Object.getPrototypeOf(Wodify)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(Wodify, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'case-hero' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'case-headline' },
-	          'WODIFY'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          { className: 'case-tagline' },
-	          'Supercharging human ability'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'case-content' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-main' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Reinventing the fitness world'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Wodify is a leading gym software company powering over 4000+ crossfit gyms around the world. They wanted to keep up the pace with the fitness industry\u2019s constant innovation and address the growing wearable market.'
-	        ),
-	        _react2.default.createElement('div', { className: 'img' }),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Fast Rope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'The solution enables athletes to pair their wearable device with a gym, powering new fitness experiences for classes and trainers. Biometric data of the participants is presented in real-time to further engage and motivate classes with real-time performance tracking.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-side' },
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo-block' },
+	          { id: 'wodify', className: 'case-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-inner' },
-	            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(591) }),
+	            { className: 'case-hero' },
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'url' },
-	              _react2.default.createElement(
-	                'h6',
-	                { className: 'url-text' },
-	                'www.wodify.com'
-	              )
+	              'h1',
+	              { className: 'case-headline' },
+	              'WODIFY'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Supercharging human ability'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Reinventing the fitness world'
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: 'what-we-did' },
-	              'What we did: IOT'
+	              { className: 'text' },
+	              'Wodify is a leading gym software company powering over 4000+ crossfit gyms around the world. They wanted to keep up the pace with the fitness industry\u2019s constant innovation and address the growing wearable market.'
+	            ),
+	            _react2.default.createElement('div', { className: 'img' }),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Fast Rope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'The solution enables athletes to pair their wearable device with a gym, powering new fitness experiences for classes and trainers. Biometric data of the participants is presented in real-time to further engage and motivate classes with real-time performance tracking.'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'share-link' },
+	            'div',
+	            { className: 'content-side' },
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'share-button' },
-	              'share this'
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(591) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'www.wodify.com'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'What we did: IOT'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'testimony-block' },
-	          _react2.default.createElement('div', { className: 'testimony-pic' }),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-text' },
-	            '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-source' },
-	            '- Barack Obama'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Wodify;
+	}(_react2.default.Component);
 	
 	exports.default = Wodify;
 
@@ -36004,6 +36045,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -36018,119 +36061,148 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(584);
 	
-	var GWMFA = function GWMFA(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'gwmfa', className: 'case-header' },
-	      _react2.default.createElement(
+	var GWMFA = function (_React$Component) {
+	  _inherits(GWMFA, _React$Component);
+	
+	  function GWMFA(props) {
+	    _classCallCheck(this, GWMFA);
+	
+	    var _this = _possibleConstructorReturn(this, (GWMFA.__proto__ || Object.getPrototypeOf(GWMFA)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(GWMFA, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'case-hero' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'case-headline' },
-	          'GW MFA'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          { className: 'case-tagline' },
-	          'Disrupting healthcare delivery'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'case-content' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-main' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Evaluating Risk, Performance and Opportunity of healthcare clinics'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'George Washington University Medical Faculty Associates (GW MFA) operates over 50 practices in the Washington, DC area. They wanted to better understand their risk exposure so they could formulate a data-driven growth strategy. This required analyzing large sample sets of data and comparing historical trends.'
-	        ),
-	        _react2.default.createElement('img', { className: 'example', src: __webpack_require__(593) }),
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Solution'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Fast Rope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'GW MFA is now using CartoMD to formulate a growth strategy for future practice expansion'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-side' },
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo-block' },
+	          { id: 'gwmfa', className: 'case-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-inner' },
-	            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(594) }),
+	            { className: 'case-hero' },
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'url' },
-	              _react2.default.createElement(
-	                'h6',
-	                { className: 'url-text' },
-	                'www.gwdocs.com'
-	              )
+	              'h1',
+	              { className: 'case-headline' },
+	              'GW MFA'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Disrupting healthcare delivery'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Evaluating Risk, Performance and Opportunity of healthcare clinics'
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: 'what-we-did' },
-	              'What we did: Data Science, Web'
+	              { className: 'text' },
+	              'George Washington University Medical Faculty Associates (GW MFA) operates over 50 practices in the Washington, DC area. They wanted to better understand their risk exposure so they could formulate a data-driven growth strategy. This required analyzing large sample sets of data and comparing historical trends.'
+	            ),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(593) }),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Solution'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Fast Rope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'GW MFA is now using CartoMD to formulate a growth strategy for future practice expansion'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'share-link' },
+	            'div',
+	            { className: 'content-side' },
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'share-button' },
-	              'share this'
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(594) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'www.gwdocs.com'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'What we did: Data Science, Web'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'testimony-block' },
-	          _react2.default.createElement('div', { className: 'testimony-pic' }),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-text' },
-	            '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-source' },
-	            '- Barack Obama'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return GWMFA;
+	}(_react2.default.Component);
 	
 	exports.default = GWMFA;
 
@@ -36156,6 +36228,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -36170,114 +36244,143 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(584);
 	
-	var Verite = function Verite(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'verite', className: 'case-header' },
-	      _react2.default.createElement(
+	var Verite = function (_React$Component) {
+	  _inherits(Verite, _React$Component);
+	
+	  function Verite(props) {
+	    _classCallCheck(this, Verite);
+	
+	    var _this = _possibleConstructorReturn(this, (Verite.__proto__ || Object.getPrototypeOf(Verite)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(Verite, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'case-hero' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'case-headline' },
-	          'Verit\xE9 | US State Department'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          { className: 'case-tagline' },
-	          'Ending human trafficking'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'case-content' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-main' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Data for Good'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.'
-	        ),
-	        _react2.default.createElement('img', { className: 'example', src: __webpack_require__(596) }),
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'What we did'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Fastrope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-side' },
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo-block' },
+	          { id: 'verite', className: 'case-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-inner' },
-	            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(597) }),
+	            { className: 'case-hero' },
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'url' },
-	              _react2.default.createElement(
-	                'h6',
-	                { className: 'url-text' },
-	                'www.state.gov'
-	              )
+	              'h1',
+	              { className: 'case-headline' },
+	              'Verit\xE9 | US State Department'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Ending human trafficking'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Data for Good'
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: 'what-we-did' },
-	              'Categories: Data Science'
+	              { className: 'text' },
+	              'Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.'
+	            ),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(596) }),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'What we did'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Fastrope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'share-link' },
+	            'div',
+	            { className: 'content-side' },
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'share-button' },
-	              'share this'
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(597) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'www.state.gov'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'Categories: Data Science'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'testimony-block' },
-	          _react2.default.createElement('div', { className: 'testimony-pic' }),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-text' },
-	            '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-source' },
-	            '- Barack Obama'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Verite;
+	}(_react2.default.Component);
 	
 	exports.default = Verite;
 
@@ -36303,6 +36406,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -36317,119 +36422,148 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(584);
 	
-	var NetworkForGood = function NetworkForGood(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'networkforgood', className: 'case-header' },
-	      _react2.default.createElement(
+	var NetworkForGood = function (_React$Component) {
+	  _inherits(NetworkForGood, _React$Component);
+	
+	  function NetworkForGood(props) {
+	    _classCallCheck(this, NetworkForGood);
+	
+	    var _this = _possibleConstructorReturn(this, (NetworkForGood.__proto__ || Object.getPrototypeOf(NetworkForGood)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(NetworkForGood, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'case-hero' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'case-headline' },
-	          'Network For Good'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          { className: 'case-tagline' },
-	          'Accelerating micro-philanthropy'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'case-content' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-main' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Micro-Donation Platform for Charities'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.'
-	        ),
-	        _react2.default.createElement('img', { className: 'example', src: __webpack_require__(599) }),
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Our Solution'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'After extensive user research about the company\u2019s target demographics we developed a concept called HippoGive - an app that rounds up daily purchases to the nearest dollar. The spare change collected is then donated to charities selected in advance by the user.  Although, the donations are collected in the background, a social feed builds engagement and increases network effects between friends.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Since launch we have seen the velocity of donations increase from once or twice annually to daily, with aggregate amounts increasing as much as 700% on an annual basis.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-side' },
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo-block' },
+	          { id: 'networkforgood', className: 'case-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-inner' },
-	            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(600) }),
+	            { className: 'case-hero' },
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'url' },
-	              _react2.default.createElement(
-	                'h6',
-	                { className: 'url-text' },
-	                'networkforgood.org'
-	              )
+	              'h1',
+	              { className: 'case-headline' },
+	              'Network For Good'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Accelerating micro-philanthropy'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Micro-Donation Platform for Charities'
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: 'what-we-did' },
-	              'What we did: Mobile, Growth'
+	              { className: 'text' },
+	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.'
+	            ),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(599) }),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Our Solution'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'After extensive user research about the company\u2019s target demographics we developed a concept called HippoGive - an app that rounds up daily purchases to the nearest dollar. The spare change collected is then donated to charities selected in advance by the user.  Although, the donations are collected in the background, a social feed builds engagement and increases network effects between friends.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Since launch we have seen the velocity of donations increase from once or twice annually to daily, with aggregate amounts increasing as much as 700% on an annual basis.'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'share-link' },
+	            'div',
+	            { className: 'content-side' },
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'share-button' },
-	              'share this'
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(600) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'networkforgood.org'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'What we did: Mobile, Growth'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'testimony-block' },
-	          _react2.default.createElement('div', { className: 'testimony-pic' }),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-text' },
-	            '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-source' },
-	            '- Barack Obama'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return NetworkForGood;
+	}(_react2.default.Component);
 	
 	exports.default = NetworkForGood;
 
@@ -36455,6 +36589,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -36469,109 +36605,138 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(584);
 	
-	var Envision = function Envision(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'envision', className: 'case-header' },
-	      _react2.default.createElement(
+	var Envision = function (_React$Component) {
+	  _inherits(Envision, _React$Component);
+	
+	  function Envision(props) {
+	    _classCallCheck(this, Envision);
+	
+	    var _this = _possibleConstructorReturn(this, (Envision.__proto__ || Object.getPrototypeOf(Envision)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(Envision, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'case-hero' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'case-headline' },
-	          'ENVISION'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          { className: 'case-tagline' },
-	          'Increasing wind power capacity'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'case-content' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-main' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'text-header' },
-	          'Coloring book tumblr vinyl'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Envision Energy is a global provider for smart energy technology including energy management software and smart turbines. The company needed **_**.'
-	        ),
-	        _react2.default.createElement('div', { className: 'img' }),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'text' },
-	          'Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'content-side' },
+	        null,
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo-block' },
+	          { id: 'envision', className: 'case-header' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'logo-inner' },
-	            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(602) }),
+	            { className: 'case-hero' },
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'url' },
-	              _react2.default.createElement(
-	                'h6',
-	                { className: 'url-text' },
-	                'envision.com'
-	              )
+	              'h1',
+	              { className: 'case-headline' },
+	              'ENVISION'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'case-tagline' },
+	              'Increasing wind power capacity'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'case-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-main' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Coloring book tumblr vinyl'
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: 'what-we-did' },
-	              'Categories: Data Science'
+	              { className: 'text' },
+	              'Envision Energy is a global provider for smart energy technology including energy management software and smart turbines. The company needed **_**.'
+	            ),
+	            _react2.default.createElement('div', { className: 'img' }),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'text' },
+	              'Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'share-link' },
+	            'div',
+	            { className: 'content-side' },
 	            _react2.default.createElement(
-	              'button',
-	              { className: 'share-button' },
-	              'share this'
+	              'div',
+	              { className: 'logo-block' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'logo-inner' },
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(602) }),
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'url' },
+	                  _react2.default.createElement(
+	                    'h6',
+	                    { className: 'url-text' },
+	                    'envision.com'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'what-we-did' },
+	                  'Categories: Data Science'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'share-link' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'share-button' },
+	                  'share this'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'testimony-block' },
+	              _react2.default.createElement('div', { className: 'testimony-pic' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-text' },
+	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'testimony-source' },
+	                '- Barack Obama'
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'testimony-block' },
-	          _react2.default.createElement('div', { className: 'testimony-pic' }),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-text' },
-	            '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'testimony-source' },
-	            '- Barack Obama'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Envision;
+	}(_react2.default.Component);
 	
 	exports.default = Envision;
 
