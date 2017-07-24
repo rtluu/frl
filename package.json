@@ -11,10 +11,12 @@
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "history": "^4.6.3",
+    "node-sass": "^4.5.3",
     "path": "^0.12.7",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router-dom": "^4.1.1",
+    "sass-loader": "^6.0.6",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
