@@ -31,7 +31,7 @@ export default class Team extends React.Component {
     return (
       <div id="team">
         <Nav />
-        <h1 className="team-title">The FastRope Team</h1>
+        <h1 className="team-title">The Fast Rope Team</h1>
         <h3 className="team-description">Our team comprised of veteran founders, socially-conscious entrepreneurs, and engineers offer strategy and solutions that drive real change. Collectively we've worked with some of the world's most innovative companies, successfully raised capital and invested in startups.</h3>
         <div className="team-box">
           <ul className="team-list">
@@ -53,7 +53,7 @@ export default class Team extends React.Component {
               <img className="teammate-pic" src={require("../img/team/jon.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Jon Ogolo, Senior Product Manager</h4>
-                <p className="teammate-description">Jon is FastRope’s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.</p>
+                <p className="teammate-description">Jon is FastRope’s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and founded a full stack office catering company.</p>
               </div>
             </li>
             <li id="garren" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
@@ -66,14 +66,14 @@ export default class Team extends React.Component {
             <li id="benH" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/benH.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Ben Hood, PhD</h4>
+                <h4 className="teammate-title">Ben Hood, Product Management & Technical Advisor</h4>
                 <p className="teammate-description">Ben Hood has been an entrepreneur and digital product manager for over a decade, most recently focused on energy and cybersecurity. He has extensive experience creating big data applications for the U.S. government, and began his career at Winamp and AOL Video. Ben has undergraduate degrees in computer engineering and physics, and a Ph.D. in astrophysics.</p>
               </div>
             </li>
             <li id="andrew" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/andrew.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Andrew Darin, Consultant</h4>
+                <h4 className="teammate-title">Andrew Darin, Health & Fitness Associate</h4>
                 <p className="teammate-description">Before consulting for FastRope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.</p>
               </div>
             </li>
@@ -94,14 +94,14 @@ export default class Team extends React.Component {
             <li id="stephen" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/stephen.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Stephen Kae, Growth Lead/ Associate</h4>
+                <h4 className="teammate-title">Stephen Kae, Growth Lead</h4>
                 <p className="teammate-description">Stephen is a brand builder and startup junkie that has consulted for a number of ventured-backed organizations. He served as the VP of Marketing at NotionTheory where helped scale the business tenfold and created partnerships with investment groups, fortune 500 companies and the U.S. government.</p>
               </div>
             </li>
             <li id="gil" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
-              <img className="teammate-pic" src={require("../img/team/gil.png")}></img>
+              <img className="teammate-pic" src={require("../img/team/gill.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Andrew Gil, Fullstack Engineer</h4>
+                <h4 className="teammate-title">Andrew Gill, Fullstack Engineer</h4>
                 <p className="teammate-description">Andrew loves transforming large, raw datasets into actionable results. He is experienced in the entire data pipeline including data collection, cleaning, analysis, machine learning, and data visualization. He&#39;s previously worked at Main Street Genome and Epic.</p>
               </div>
             </li>
@@ -122,14 +122,14 @@ export default class Team extends React.Component {
             <li id="partha" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/partha.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Partha Rajendra, Software</h4>
+                <h4 className="teammate-title">Partha Rajendra, Fullstack Engineer</h4>
                 <p className="teammate-description">Partha is a software developer at FRL who has worked with several startups in the past. Partha holds a BA in CS and has previous experience in web applications, data extraction, and IoT.</p>
               </div>
             </li>
             <li id="leah" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/leah.png")}></img>
               <div className="teammate-overlay">
-                <h4 className="teammate-title">Leah Snider, Full Stack Creative</h4>
+                <h4 className="teammate-title">Leah Snider, Fullstack Creative</h4>
                 <p className="teammate-description">Leah&#39;s creative expertise ranges from graphic design, user experience design, visual design, and photography and video production. She&#39;s formerly worked with Worn Creative, Len DePas Photography and Flavor Group. Leah has a BA in Media Studies from Scripps College.</p>
               </div>
             </li>
