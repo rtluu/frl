@@ -7,6 +7,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0 284px 0;
+  @media screen and (max-width: 675px){
+    padding: 200px 0 200px 0;
+  }
 
   .contact-headline{
     color: white;
@@ -30,12 +33,16 @@
   @include transform( translateX(-50%) );
   @media screen and (max-width: 675px){
     padding: 40px 40px;
+    top: 0px;
+  }
+  @media screen and (max-width: 675px){
+    padding: 40px 30px;
+  }
+  @media screen and (max-width: $phone){
+    padding: 40px 20px;
   }
 
   form{
-    @media screen and (max-width: $large){
-      padding-top: 30px;
-    }
 
     .form-group{
 
@@ -71,11 +78,19 @@
       //Style 'Interests' form-group
       &#interests{
         border: 3px solid #CACACA;
-        box-sizing: border-box;
+        box-sizing: content-box;
         height: 280px;
         margin-bottom: 20px;
         padding: 0 32px;
         text-align: center;
+        @media screen and (max-width: 675px){
+          height: 370px;
+          padding: 0;
+        }
+        @media screen and (max-width: 515px){
+          box-sizing: border-box;
+          height: 592px;
+        }
 
         h3{
           color: #C3C3C3;
@@ -85,50 +100,62 @@
           padding: 20px 0 0 0;
         }
 
-        .checkbox-inline{
-          cursor: pointer;
-          display: inline-block;
-          min-width: 80px;
-          margin: 10px 40px;
-
-          .checkbox{
-            height: 0;
-            opacity: 0;
-
-            &:hover ~ img{
-              opacity: 1;
-              @include filter( grayscale, 0);
-            }
-
-            &:hover ~ p{
-              color: $fr-yellow;
-            }
-
-            &:checked ~ img{
-              opacity: 1;
-              @include filter( grayscale, 0);
-            }
-
-            &:checked ~ p{
-              color: $fr-yellow;
-            }
+        .interests-inner{
+          margin: 0 auto;
+          @media screen and (max-width: 675px){
+            max-width: 340px;
           }
 
-          img{
-            display: block;
-            margin: 0 auto;
-            vertical-align: top;
-            width: 30px;
-            @include filter( grayscale, 100%);
-            @include transition( all 0.2s );
-          }
+          .interest-inline{
+            cursor: pointer;
+            display: inline-block;
+            min-width: 80px;
+            margin: 10px 40px;
+            @media screen and (max-width: 515px){
+              display: block;
+              margin: 10px auto;
+              width: 100px;
+            }
 
-          p{
-            color: #AAA9A9;
-            font-size: 15px;
-            font-weight: 500;
-            margin-top: 8px;
-            @include transition( all 0.2s ) ;
+            .interest{
+              height: 0;
+              opacity: 0;
+
+              &:hover ~ img{
+                opacity: 1;
+                @include filter( grayscale, 0);
+              }
+
+              &:hover ~ p{
+                color: $fr-yellow;
+              }
+
+              &:checked ~ img{
+                opacity: 1;
+                @include filter( grayscale, 0);
+              }
+
+              &:checked ~ p{
+                color: $fr-yellow;
+              }
+            }
+
+            img{
+              display: block;
+              margin: 0 auto;
+              vertical-align: top;
+              width: 30px;
+              @include filter( grayscale, 100%);
+              @include transition( all 0.2s );
+            }
+
+            p{
+              color: #AAA9A9;
+              font-size: 15px;
+              font-weight: 500;
+              margin-top: 8px;
+              @include transition( all 0.2s );
+            }
           }
         }
       }
@@ -139,6 +166,12 @@
         box-sizing: border-box;
         height: 240px;
         padding: 0 32px;
+        @media screen and (max-width: 675px){
+          height: 420px;
+        }
+        @media screen and (max-width: 435px){
+          height: 434px;
+        }
 
         h3{
           color: #C3C3C3;
@@ -147,6 +180,9 @@
           font-weight: 400;
           padding: 20px 0 20px 0;
           text-align: center;
+          @media screen and (max-width: 675px){
+            padding-bottom: 10px;
+          }
         }
 
         .radio-inline{
@@ -155,6 +191,18 @@
           min-width: 150px;
           margin: 15px 0px 15px 60px;
           text-align: left;
+          @media screen and (max-width: 675px){
+            display: block;
+            margin: 15px auto;
+            max-width: 200px;
+            padding: 10px 0;
+          }
+
+          &:hover{
+            span{
+              color: black;
+            }
+          }
 
           input{
             cursor: pointer;
@@ -164,7 +212,8 @@
             color: #AAA9A9;
             font-size: 15px;
             font-weight: 500;
-            margin-left: 10px
+            margin-left: 10px;
+            @include transition( all 0.2s ) ;
           }
         }
       }
@@ -180,10 +229,22 @@
           font-size: 25px;
           font-weight: 300;
           height: 70px;
-          margin: 60px auto 15px auto;
+          margin: 50px auto 15px auto;
           text-align: center;
           width: 420px;
           @include transition( all 0.2s );
+          @media screen and (max-width: 675px){
+            font-size: 22px;
+            height: 62px;
+            margin: 42px auto 12px auto;
+            width: 380px;
+          }
+          @media screen and (max-width: 515px){
+            font-size: 20px;
+            height: 56px;
+            margin: 36px auto 10px auto;
+            width: 100%;
+          }
 
           &:hover{
             opacity: 0.8;
@@ -208,6 +269,8 @@
       top: 170px;
       @media screen and (max-width: $large){
         left: auto;
+        margin-top: 30px;
+        max-width: 100%;
         text-align: left;
         top: auto;
       }
@@ -218,9 +281,10 @@
       right: -260px;
       top: 170px;
       @media screen and (max-width: $large){
-        float: right;
+        margin-top: 30px;
+        max-width: 100%;
         right: auto;
-        text-align: right;
+        text-align: left;
         top: auto;
       }
     }
@@ -229,12 +293,16 @@
       color: #535353;
       font-family: $stixB;
       font-size: 35px;
+      @media screen and (max-width: 675px){
+        font-size: 32px;
+      }
     }
 
     .contact-cta-text{
       color: #535353;
       font-family: $stix;
       font-size: 20px;
+      font-size: 18px;
     }
   }
 }
