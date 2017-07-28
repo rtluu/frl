@@ -46,14 +46,14 @@ export default class Team extends React.Component {
               <img className="teammate-pic" src={require("../img/team/dhruva.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Dhruva Rajendra, Founder + Partner</h4>
-                <p className="teammate-description">Prior to Fast Rope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.</p>
+                <p className="teammate-description">Prior to FastRope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.</p>
               </div>
             </li>
             <li id="jon" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/jon.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Jon Ogolo, Senior Product Manager</h4>
-                <p className="teammate-description">Jon is Fast Rope’s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.</p>
+                <p className="teammate-description">Jon is FastRope’s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.</p>
               </div>
             </li>
             <li id="garren" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
@@ -74,7 +74,7 @@ export default class Team extends React.Component {
               <img className="teammate-pic" src={require("../img/team/andrew.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Andrew Darin, Consultant</h4>
-                <p className="teammate-description">Before consulting for Fast Rope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.</p>
+                <p className="teammate-description">Before consulting for FastRope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.</p>
               </div>
             </li>
             <li id="mike" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
@@ -98,6 +98,27 @@ export default class Team extends React.Component {
                 <p className="teammate-description">Stephen is a brand builder and startup junkie that has consulted for a number of ventured-backed organizations. He served as the VP of Marketing at NotionTheory where helped scale the business tenfold and created partnerships with investment groups, fortune 500 companies and the U.S. government.</p>
               </div>
             </li>
+            <li id="gil" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
+              <img className="teammate-pic" src={require("../img/team/gil.png")}></img>
+              <div className="teammate-overlay">
+                <h4 className="teammate-title">Andrew Gil, Fullstack Engineer</h4>
+                <p className="teammate-description">Andrew loves transforming large, raw datasets into actionable results. He is experienced in the entire data pipeline including data collection, cleaning, analysis, machine learning, and data visualization. He&#39;s previously worked at Main Street Genome and Epic.</p>
+              </div>
+            </li>
+            <li id="josh" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
+              <img className="teammate-pic" src={require("../img/team/josh.png")}></img>
+              <div className="teammate-overlay">
+                <h4 className="teammate-title">Josh Tackett, Fullstack Engineer</h4>
+                <p className="teammate-description">Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.</p>
+              </div>
+            </li>
+            <li id="matt" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
+              <img className="teammate-pic" src={require("../img/team/matt.png")}></img>
+              <div className="teammate-overlay">
+                <h4 className="teammate-title">Matt Blank, Product Manager</h4>
+                <p className="teammate-description">Matt has a passion for getting new ventures off the ground, having worked for multiple venture-backed startups and launched projects of his own. He most recently worked as a consultant for Deloitte and is likely wearing a combination of Lululemon, Bonobos, and Allbirds as you’re reading this.</p>
+              </div>
+            </li>
             <li id="partha" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
               <img className="teammate-pic" src={require("../img/team/partha.png")}></img>
               <div className="teammate-overlay">
@@ -109,14 +130,7 @@ export default class Team extends React.Component {
               <img className="teammate-pic" src={require("../img/team/leah.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Leah Snider, Full Stack Creative</h4>
-                <p className="teammate-description">Roles ranges from graphic design, photography, video and creative coordination. She’s previously worked with Worn Creative, LenDePas Photography and Flavor Group.</p>
-              </div>
-            </li>
-            <li id="matt" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
-              <img className="teammate-pic" src={require("../img/team/matt.png")}></img>
-              <div className="teammate-overlay">
-                <h4 className="teammate-title">Matt Blank, Associate Product Manager</h4>
-                <p className="teammate-description"></p>
+                <p className="teammate-description">Leah&#39;s creative expertise ranges from graphic design, user experience design, visual design, and photography and video production. She&#39;s formerly worked with Worn Creative, Len DePas Photography and Flavor Group. Leah has a BA in Media Studies from Scripps College.</p>
               </div>
             </li>
           </ul>

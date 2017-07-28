@@ -429,13 +429,6 @@
       background-size: cover;
     }
 
-    &#wind{
-      background: url('../img/home/work/wind.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
     &#crowdsourcing{
       background: url('../img/home/work/crowdsourcing.png');
       background-position: center;
@@ -462,6 +455,27 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    &#wind{
+      background: url('../img/home/work/wind.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: not-allowed;
+
+      &:hover{
+        &:before{
+          background: rgba(246,199,34,0.7);
+          bottom: 0;
+          content: '';
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 1;
+        }
+      }
     }
 
     &:nth-child(1){

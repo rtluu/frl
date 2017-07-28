@@ -24,7 +24,7 @@ export default class Upside extends React.Component {
 
         <div id="upside" className="case-header">
           <div className="case-hero">
-            <h1 className="case-headline">UPSIDE</h1>
+            <h1 className="case-headline">Upside</h1>
             <h3 className="case-tagline">Creating unicorn startups</h3>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default class Upside extends React.Component {
                 <a className="url"><h6 className="url-text">upside.com</h6></a>
                 <p className="what-we-did">Categories: Data science, product, growth</p>
               </div>
-              <a className="share-link"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/upside"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">

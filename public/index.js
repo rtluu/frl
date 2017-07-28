@@ -65,7 +65,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	//Stix Local Fonts
-	__webpack_require__(607);
+	__webpack_require__(611);
 	
 	var Route = _reactRouterDom.BrowserRouter.Route;
 	
@@ -33732,31 +33732,31 @@
 	
 	var _Team2 = _interopRequireDefault(_Team);
 	
-	var _Contact = __webpack_require__(573);
+	var _Contact = __webpack_require__(575);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Wodify = __webpack_require__(584);
+	var _Wodify = __webpack_require__(586);
 	
 	var _Wodify2 = _interopRequireDefault(_Wodify);
 	
-	var _GWMFA = __webpack_require__(594);
+	var _GWMFA = __webpack_require__(597);
 	
 	var _GWMFA2 = _interopRequireDefault(_GWMFA);
 	
-	var _Verite = __webpack_require__(597);
+	var _Verite = __webpack_require__(600);
 	
 	var _Verite2 = _interopRequireDefault(_Verite);
 	
-	var _NetworkForGood = __webpack_require__(600);
+	var _NetworkForGood = __webpack_require__(603);
 	
 	var _NetworkForGood2 = _interopRequireDefault(_NetworkForGood);
 	
-	var _Envision = __webpack_require__(603);
+	var _Envision = __webpack_require__(607);
 	
 	var _Envision2 = _interopRequireDefault(_Envision);
 	
-	var _Upside = __webpack_require__(605);
+	var _Upside = __webpack_require__(609);
 	
 	var _Upside2 = _interopRequireDefault(_Upside);
 	
@@ -33791,6 +33791,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(297);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -33807,314 +33809,358 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	__webpack_require__(532);
 	__webpack_require__(534);
 	
-	var Home = function Home(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { id: 'home' },
-	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'hero-block' },
-	      _react2.default.createElement(
+	var Home = function (_React$Component) {
+	  _inherits(Home, _React$Component);
+	
+	  function Home(props) {
+	    _classCallCheck(this, Home);
+	
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+	
+	    _this.state = {
+	      hovered: false
+	    };
+	    _this.changeText = _this.changeText.bind(_this);
+	    _this.changeBack = _this.changeBack.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Home, [{
+	    key: 'changeText',
+	    value: function changeText() {
+	      this.setState({ hovered: true });
+	    }
+	  }, {
+	    key: 'changeBack',
+	    value: function changeBack() {
+	      this.setState({ hovered: false });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var envision = {};
+	      if (this.state.hovered) {
+	        envision.text = "Coming Soon";
+	      } else {
+	        envision.text = "Innovating wind power capacity";
+	      }
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'hero-inner' },
+	        { id: 'home' },
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'hero-headline' },
-	          'We are ',
+	          'div',
+	          { className: 'hero-block' },
 	          _react2.default.createElement(
-	            'span',
-	            { id: 'bold' },
-	            'building'
-	          ),
-	          ' the world we ',
-	          _react2.default.createElement(
-	            'span',
-	            { id: 'italic' },
-	            'want'
-	          ),
-	          ' to live in.'
-	        ),
-	        _react2.default.createElement('div', { className: 'hero-divider' }),
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'hero-description' },
-	          'Fastrope is an elite team of entrepreneurial builders who partner with world-class innovators to make crazy ideas real.'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouterDom.Link,
-	          { to: '/contact', className: 'hero-button-link' },
-	          _react2.default.createElement(
-	            'button',
-	            { id: 'hero-button' },
+	            'div',
+	            { className: 'hero-inner' },
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'button-text' },
-	              'LET\'S BUILD SOMETHING AMAZING'
+	              'h1',
+	              { className: 'hero-headline' },
+	              'We are ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'bold' },
+	                'building'
+	              ),
+	              ' the world we ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'italic' },
+	                'want'
+	              ),
+	              ' to live in.'
+	            ),
+	            _react2.default.createElement('div', { className: 'hero-divider' }),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'hero-description' },
+	              'Fastrope is an elite team of entrepreneurial builders who partner with world-class innovators to make crazy ideas real.'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouterDom.Link,
+	              { to: '/contact', className: 'hero-button-link' },
+	              _react2.default.createElement(
+	                'button',
+	                { id: 'hero-button' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'button-text' },
+	                  'LET\'S BUILD SOMETHING AMAZING'
+	                )
+	              )
 	            )
 	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'press-block' },
-	      _react2.default.createElement(
-	        'h4',
-	        { className: 'press-description' },
-	        'Our work has been featured in:'
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        { className: 'press-list' },
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'forbes', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(546) })
 	        ),
 	        _react2.default.createElement(
-	          'li',
-	          { id: 'usatoday', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(547) })
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'cnn', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(548) })
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'techcrunch', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(549) })
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'bloomberg', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(550) })
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          { id: 'fortune', className: 'press-item' },
-	          _react2.default.createElement('img', { src: __webpack_require__(551) })
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'capabilities-block' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'capabilities-inner' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'capabilities-headline' },
-	          'Deep ',
+	          'div',
+	          { className: 'press-block' },
 	          _react2.default.createElement(
-	            'span',
-	            { id: 'bold' },
-	            'science'
+	            'h4',
+	            { className: 'press-description' },
+	            'Our work has been featured in:'
 	          ),
-	          ' and ',
 	          _react2.default.createElement(
-	            'span',
-	            { id: 'italic' },
-	            'empathy'
-	          ),
-	          ' are fundamental to everything we do.'
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'capabilities-list' },
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(552) }),
+	            'ul',
+	            { className: 'press-list' },
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'R&D'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(553) }),
+	              'li',
+	              { id: 'forbes', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(546) })
+	            ),
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'DESIGN'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(554) }),
+	              'li',
+	              { id: 'usatoday', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(547) })
+	            ),
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'HARDWARE'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(555) }),
+	              'li',
+	              { id: 'cnn', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(548) })
+	            ),
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'SOFTWARE'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(556) }),
+	              'li',
+	              { id: 'techcrunch', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(549) })
+	            ),
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'DATA'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'capabilities-item' },
-	            _react2.default.createElement('img', { src: __webpack_require__(557) }),
+	              'li',
+	              { id: 'bloomberg', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(550) })
+	            ),
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'capabilities-text' },
-	              'GROWTH'
+	              'li',
+	              { id: 'fortune', className: 'press-item' },
+	              _react2.default.createElement('img', { src: __webpack_require__(551) })
 	            )
 	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'inspire-block' },
-	      _react2.default.createElement(
-	        'h3',
-	        { className: 'inspire-text' },
-	        'We tackle audacious and inspiring problems with awesome partners, and together we make an impact at global scale.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { id: 'work', className: 'work-block' },
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/verite', id: 'labor', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Ending human trafficking'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/gwmfa', id: 'healthcare', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Disrupting healtcare delivery'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/networkforgood', id: 'crowdsourcing', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Accelerating micro- philanthropy'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/upside', id: 'unicorn', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Creating unicorn startups'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/wodify', id: 'fitness', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Supercharging human',
-	          _react2.default.createElement('br', null),
-	          'ability'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactRouterDom.Link,
-	        { to: '/envision', id: 'wind', className: 'work-item' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'work-text' },
-	          'Increasing wind power capacity'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'people-block' },
-	      _react2.default.createElement(
-	        'h3',
-	        { className: 'people-text' },
-	        'Meet our team of passionate and brilliant builders, including scientists, technologists, and creatives who are as inspiring as their work.',
-	        _react2.default.createElement(
-	          _reactRouterDom.Link,
-	          { to: '/team' },
-	          _react2.default.createElement('span', { id: 'team-arrow' })
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'cta-block' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'cta-inner' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'cta-headline' },
-	          'No idea is ',
-	          _react2.default.createElement(
-	            'span',
-	            { id: 'bold' },
-	            'too big'
-	          ),
-	          ' or ',
-	          _react2.default.createElement(
-	            'span',
-	            { id: 'italic' },
-	            'too small'
-	          ),
-	          ', so...'
 	        ),
 	        _react2.default.createElement(
-	          _reactRouterDom.Link,
-	          { to: '/contact', className: 'cta-button-link', href: '#contact' },
+	          'div',
+	          { className: 'capabilities-block' },
 	          _react2.default.createElement(
-	            'button',
-	            { id: 'cta-button' },
+	            'div',
+	            { className: 'capabilities-inner' },
 	            _react2.default.createElement(
-	              'h5',
-	              { className: 'button-text' },
-	              'LET\'S BUILD SOMETHING AMAZING'
+	              'h1',
+	              { className: 'capabilities-headline' },
+	              'Deep ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'bold' },
+	                'science'
+	              ),
+	              ' and ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'italic' },
+	                'empathy'
+	              ),
+	              ' are fundamental to everything we do.'
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'capabilities-list' },
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(552) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'R&D'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(553) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'DESIGN'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(554) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'HARDWARE'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(555) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'SOFTWARE'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(556) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'DATA'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'capabilities-item' },
+	                _react2.default.createElement('img', { src: __webpack_require__(557) }),
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'capabilities-text' },
+	                  'GROWTH'
+	                )
+	              )
 	            )
 	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
-	  );
-	};
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'inspire-block' },
+	          _react2.default.createElement(
+	            'h3',
+	            { className: 'inspire-text' },
+	            'We tackle audacious and inspiring problems with awesome partners, and together we make an impact at global scale.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'work', className: 'work-block' },
+	          _react2.default.createElement(
+	            _reactRouterDom.Link,
+	            { to: '/verite', id: 'labor', className: 'work-item' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              'Ending human trafficking'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterDom.Link,
+	            { to: '/gwmfa', id: 'healthcare', className: 'work-item' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              'Disrupting healtcare delivery'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterDom.Link,
+	            { to: '/networkforgood', id: 'crowdsourcing', className: 'work-item' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              'Accelerating micro- philanthropy'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterDom.Link,
+	            { to: '/upside', id: 'unicorn', className: 'work-item' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              'Creating unicorn startups'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterDom.Link,
+	            { to: '/wodify', id: 'fitness', className: 'work-item' },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              'Supercharging human',
+	              _react2.default.createElement('br', null),
+	              'ability'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'wind', className: 'work-item', onMouseOver: this.changeText, onMouseOut: this.changeBack },
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'work-text' },
+	              envision.text
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'people-block' },
+	          _react2.default.createElement(
+	            'h3',
+	            { className: 'people-text' },
+	            'Meet our team of passionate and brilliant builders, including scientists, technologists, and creatives who are as inspiring as their work.',
+	            _react2.default.createElement(
+	              _reactRouterDom.Link,
+	              { to: '/team' },
+	              _react2.default.createElement('span', { id: 'team-arrow' })
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'cta-block' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'cta-inner' },
+	            _react2.default.createElement(
+	              'h1',
+	              { className: 'cta-headline' },
+	              'No idea is ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'bold' },
+	                'too big'
+	              ),
+	              ' or ',
+	              _react2.default.createElement(
+	                'span',
+	                { id: 'italic' },
+	                'too small'
+	              ),
+	              ', so...'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouterDom.Link,
+	              { to: '/contact', className: 'cta-button-link', href: '#contact' },
+	              _react2.default.createElement(
+	                'button',
+	                { id: 'cta-button' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  { className: 'button-text' },
+	                  'LET\'S BUILD SOMETHING AMAZING'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Home;
+	}(_react2.default.Component);
 	
 	exports.default = Home;
 
@@ -34749,7 +34795,7 @@
 	
 	
 	// module
-	exports.push([module.id, "#bold {\n  font-weight: 900; }\n\n#italic {\n  font-family: \"Stix-BoldItalic\";\n  font-style: italic; }\n\n.hero-block {\n  background: url(" + __webpack_require__(536) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100%; }\n  .hero-block .hero-inner {\n    display: block;\n    margin: 0 auto;\n    max-width: 750px;\n    padding: 192px 0 180px 0;\n    position: relative; }\n    @media screen and (max-width: 1000px) {\n      .hero-block .hero-inner {\n        max-width: 650px;\n        padding: 172px 0 160px 0; } }\n    @media screen and (max-width: 750px) {\n      .hero-block .hero-inner {\n        max-width: 480px;\n        padding: 150px 0 140px 0; } }\n    @media screen and (max-width: 500px) {\n      .hero-block .hero-inner {\n        max-width: 100%;\n        padding: 136px 20px 120px 20px; } }\n    .hero-block .hero-inner .hero-headline {\n      color: white;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 54px;\n          line-height: 62px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 30px;\n          line-height: 42px; } }\n    .hero-block .hero-inner .hero-divider {\n      background: #AAAAAA;\n      display: block;\n      height: 1px;\n      margin: 15px auto 38px auto;\n      position: relative;\n      width: 717px; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 12px auto 28px auto;\n          width: 617px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 14px auto 24px auto;\n          width: 427px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 14px auto 24px auto;\n          width: calc(100% - 40px); } }\n    .hero-block .hero-inner .hero-description {\n      color: #B9B9B9;\n      font-family: \"Stix-Italic\";\n      font-style: italic;\n      font-size: 28px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 18px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 16px; } }\n    .hero-block .hero-inner .hero-button-link {\n      display: inline-block;\n      left: 50%;\n      margin-top: 90px;\n      position: relative;\n      -webkit-transform: translateX(-50%);\n      -moz-transform: translateX(-50%);\n      -ms-transform: translateX(-50%);\n      -o-transform: translateX(-50%);\n      transform: translateX(-50%); }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 65px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 55px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 36px; } }\n      .hero-block .hero-inner .hero-button-link #hero-button {\n        background: none;\n        border: 4px solid #FFC600;\n        cursor: pointer;\n        height: 66px;\n        width: 375px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n        @media screen and (max-width: 1000px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: 60px;\n            width: 350px; } }\n        @media screen and (max-width: 750px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: 54px;\n            width: 325px; } }\n        @media screen and (max-width: 500px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: auto;\n            width: 100%; } }\n        .hero-block .hero-inner .hero-button-link #hero-button:hover {\n          background: #FFC600; }\n          .hero-block .hero-inner .hero-button-link #hero-button:hover .button-text {\n            color: white; }\n        .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n          color: #FFC600;\n          font-size: 20px;\n          font-weight: 700;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 1000px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              font-size: 18px; } }\n          @media screen and (max-width: 750px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              font-size: 17px; } }\n          @media screen and (max-width: 500px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              padding: 10px 14px;\n              font-size: 14px; } }\n\n.press-block {\n  background: #CCCCCC;\n  display: block;\n  padding: 64px 10px 24px 10px; }\n  .press-block .press-description {\n    color: #555555;\n    display: block;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .press-block .press-description {\n        font-size: 26px; } }\n    @media screen and (max-width: 750px) {\n      .press-block .press-description {\n        font-size: 24px; } }\n  .press-block .press-list {\n    display: block;\n    margin: 10px auto;\n    max-width: 1318px;\n    text-align: center; }\n    @media screen and (max-width: 1338px) {\n      .press-block .press-list {\n        max-width: 1000px; } }\n    .press-block .press-list .press-item {\n      display: inline-block;\n      list-style: none;\n      margin: 40px 40px; }\n      @media screen and (max-width: 1338px) {\n        .press-block .press-list .press-item {\n          margin: 30px 40px; } }\n      .press-block .press-list .press-item #forbes {\n        width: 106px; }\n      .press-block .press-list .press-item #usatoday {\n        width: 160px; }\n      .press-block .press-list .press-item #cnn {\n        width: 64px; }\n      .press-block .press-list .press-item #techcrunch {\n        width: 212px; }\n      .press-block .press-list .press-item #bloomberg {\n        width: 150px; }\n      .press-block .press-list .press-item #fortune {\n        width: 154px; }\n      .press-block .press-list .press-item img {\n        height: 30px; }\n\n.capabilities-block {\n  background: url(" + __webpack_require__(537) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100vw; }\n  .capabilities-block .capabilities-inner {\n    display: block;\n    margin: 0 auto;\n    position: relative;\n    padding: 200px 0; }\n    @media screen and (max-width: 1338px) {\n      .capabilities-block .capabilities-inner {\n        padding: 180px 0; } }\n    @media screen and (max-width: 1000px) {\n      .capabilities-block .capabilities-inner {\n        padding: 160px 0; } }\n    @media screen and (max-width: 750px) {\n      .capabilities-block .capabilities-inner {\n        padding: 140px 0; } }\n    @media screen and (max-width: 750px) {\n      .capabilities-block .capabilities-inner {\n        padding: 100px 0; } }\n    .capabilities-block .capabilities-inner .capabilities-headline {\n      color: white;\n      display: block;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      margin: 0 auto;\n      max-width: 990px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 54px;\n          line-height: 62px;\n          max-width: 850px;\n          padding: 0 30px; } }\n      @media screen and (max-width: 850px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          max-width: 750px; } }\n      @media screen and (max-width: 750px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 44px;\n          line-height: 50px;\n          max-width: 710px;\n          padding: 0 30px; } }\n      @media screen and (max-width: 710px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          max-width: 620px; } }\n      @media screen and (max-width: 500px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 30px;\n          line-height: 40px;\n          max-width: 100%;\n          padding: 0 20px; } }\n    .capabilities-block .capabilities-inner .capabilities-list {\n      display: block;\n      margin: 80px auto 0 auto;\n      max-width: 1315px;\n      text-align: center; }\n      @media screen and (max-width: 1338px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 50px auto 0 auto;\n          max-width: 900px; } }\n      @media screen and (max-width: 1000px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 30px auto 0 auto; } }\n      @media screen and (max-width: 750px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 20px auto 0 auto; } }\n      @media screen and (max-width: 500px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          max-width: 400px;\n          margin: 10px auto 0 auto; } }\n      .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n        display: inline-block;\n        margin: 50px 70px 0 70px;\n        text-align: center; }\n        @media screen and (max-width: 1338px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            min-width: 102px; } }\n        @media screen and (max-width: 750px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            margin: 50px 50px 0 50px;\n            min-width: 96px; } }\n        @media screen and (max-width: 500px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            margin: 50px 30px 0 30px;\n            min-width: 90px; } }\n        .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n          vertical-align: top;\n          width: 65px; }\n          @media screen and (max-width: 1000px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n              width: 55px; } }\n          @media screen and (max-width: 500px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n              width: 50px; } }\n        .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n          color: #FFC600;\n          font-size: 18px;\n          font-weight: 600;\n          margin-top: 35px; }\n          @media screen and (max-width: 750px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n              font-size: 17px;\n              margin-top: 32px; } }\n          @media screen and (max-width: 500px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n              font-size: 16px;\n              margin-top: 30px; } }\n\n.inspire-block {\n  background: #333333;\n  display: block;\n  padding: 20px 0; }\n  .inspire-block .inspire-text {\n    color: #b5b5b5;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    line-height: 43px;\n    margin: 80px auto;\n    max-width: 854px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .inspire-block .inspire-text {\n        font-size: 24px;\n        max-width: 700px;\n        margin: 60px auto; } }\n    @media screen and (max-width: 750px) {\n      .inspire-block .inspire-text {\n        font-size: 20px;\n        max-width: 570px;\n        margin: 50px auto;\n        padding: 0 30px; } }\n\n.work-block {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around; }\n  .work-block .work-item {\n    cursor: pointer;\n    flex-basis: 33.33%;\n    height: 600px;\n    padding: 50px;\n    position: relative; }\n    @media screen and (max-width: 1000px) {\n      .work-block .work-item {\n        flex-basis: 50%;\n        height: 500px; } }\n    @media screen and (max-width: 500px) {\n      .work-block .work-item {\n        flex-basis: 100%;\n        height: 500px; } }\n    .work-block .work-item:hover:before {\n      background: rgba(0, 0, 0, 0.7); }\n    .work-block .work-item:before {\n      background: rgba(35, 54, 112, 0.7);\n      bottom: 0;\n      content: '';\n      left: 0;\n      position: absolute;\n      right: 0;\n      top: 0;\n      z-index: 1;\n      -webkit-transition: all 0.2s;\n      -moz-transition: all 0.2s;\n      -o-transition: all 0.2s;\n      transition: all 0.2s; }\n    .work-block .work-item#labor {\n      background: url(" + __webpack_require__(538) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#wind {\n      background: url(" + __webpack_require__(539) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#crowdsourcing {\n      background: url(" + __webpack_require__(540) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#healthcare {\n      background: url(" + __webpack_require__(541) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#fitness {\n      background: url(" + __webpack_require__(542) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#unicorn {\n      background: url(" + __webpack_require__(543) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item:nth-child(1) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 220px; }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item:nth-child(1) .work-text {\n          max-width: 200px; } }\n    .work-block .work-item:nth-child(2) .work-text {\n      font-weight: 900;\n      max-width: 200px; }\n    .work-block .work-item:nth-child(3) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 270px; }\n    .work-block .work-item:nth-child(4) .work-text {\n      font-weight: 900;\n      max-width: 240px; }\n    .work-block .work-item:nth-child(5) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 300px; }\n    .work-block .work-item:nth-child(6) .work-text {\n      font-weight: 900;\n      max-width: 260px; }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item:nth-child(6) .work-text {\n          max-width: 220px; } }\n    .work-block .work-item .work-text {\n      bottom: 50px;\n      color: white;\n      font-size: 48px;\n      left: 50px;\n      line-height: 54px;\n      position: absolute;\n      text-align: left;\n      z-index: 2; }\n      @media screen and (max-width: 1338px) {\n        .work-block .work-item .work-text {\n          bottom: 44px;\n          font-size: 44px;\n          left: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 1000px) {\n        .work-block .work-item .work-text {\n          bottom: 40px;\n          font-size: 40px;\n          left: 40px; } }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item .work-text {\n          bottom: 32px;\n          font-size: 32px;\n          left: 32px; } }\n      .work-block .work-item .work-text:after {\n        content: url(" + __webpack_require__(544) + ");\n        height: 19px;\n        margin-left: 5px;\n        margin-top: -1px;\n        position: absolute;\n        width: 21px; }\n\n.people-block {\n  background: #cccccc;\n  display: block;\n  padding: 20px 0; }\n  .people-block .people-text {\n    color: #555555;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    line-height: 43px;\n    margin: 80px auto;\n    max-width: 854px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .people-block .people-text {\n        font-size: 24px;\n        max-width: 724px;\n        margin: 60px auto; } }\n    @media screen and (max-width: 750px) {\n      .people-block .people-text {\n        font-size: 20px;\n        max-width: 520px;\n        margin: 50px auto;\n        padding: 0 24px; } }\n    .people-block .people-text #team-arrow {\n      background: url(" + __webpack_require__(544) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: 21px 19px;\n      box-sizing: content-box;\n      cursor: pointer;\n      height: 19px;\n      margin-top: 3px;\n      padding: 10px 5px;\n      position: absolute;\n      width: 21px; }\n\n.cta-block {\n  background: url(" + __webpack_require__(545) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100%; }\n  .cta-block .cta-inner {\n    display: block;\n    margin: 0 auto;\n    max-width: 580px;\n    padding: 174px 0; }\n    @media screen and (max-width: 1000px) {\n      .cta-block .cta-inner {\n        max-width: 480px;\n        padding: 150px 0; } }\n    @media screen and (max-width: 750px) {\n      .cta-block .cta-inner {\n        max-width: 390px;\n        padding: 130px 0; } }\n    @media screen and (max-width: 500px) {\n      .cta-block .cta-inner {\n        max-width: 100%;\n        padding: 120px 20px; } }\n    .cta-block .cta-inner .cta-headline {\n      color: white;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 54px;\n          line-height: 62px; } }\n      @media screen and (max-width: 750px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 500px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 30px;\n          line-height: 44px;\n          margin: 0 auto;\n          max-width: 280px; } }\n    .cta-block .cta-inner .cta-button-link {\n      display: inline-block;\n      left: 50%;\n      margin-top: 50px;\n      position: relative;\n      -webkit-transform: translateX(-50%);\n      -moz-transform: translateX(-50%);\n      -ms-transform: translateX(-50%);\n      -o-transform: translateX(-50%);\n      transform: translateX(-50%); }\n      @media screen and (max-width: 1000px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 45px; } }\n      @media screen and (max-width: 750px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 40px; } }\n      @media screen and (max-width: 500px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 35px; } }\n      .cta-block .cta-inner .cta-button-link #cta-button {\n        background: none;\n        border: 4px solid #FFC600;\n        cursor: pointer;\n        height: 65px;\n        width: 375px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n        @media screen and (max-width: 1000px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: 60px;\n            width: 350px; } }\n        @media screen and (max-width: 750px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: 55px;\n            width: 325px; } }\n        @media screen and (max-width: 500px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: auto;\n            width: 100%; } }\n        .cta-block .cta-inner .cta-button-link #cta-button:hover {\n          background: #FFC600; }\n          .cta-block .cta-inner .cta-button-link #cta-button:hover .button-text {\n            color: white; }\n        .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n          color: #FFC600;\n          font-size: 20px;\n          font-weight: 700;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 1000px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              font-size: 18px; } }\n          @media screen and (max-width: 1000px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              font-size: 17px; } }\n          @media screen and (max-width: 500px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              padding: 10px 14px;\n              font-size: 14px; } }\n", ""]);
+	exports.push([module.id, "#bold {\n  font-weight: 900; }\n\n#italic {\n  font-family: \"Stix-BoldItalic\";\n  font-style: italic; }\n\n.hero-block {\n  background: url(" + __webpack_require__(536) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100%; }\n  .hero-block .hero-inner {\n    display: block;\n    margin: 0 auto;\n    max-width: 750px;\n    padding: 192px 0 180px 0;\n    position: relative; }\n    @media screen and (max-width: 1000px) {\n      .hero-block .hero-inner {\n        max-width: 650px;\n        padding: 172px 0 160px 0; } }\n    @media screen and (max-width: 750px) {\n      .hero-block .hero-inner {\n        max-width: 480px;\n        padding: 150px 0 140px 0; } }\n    @media screen and (max-width: 500px) {\n      .hero-block .hero-inner {\n        max-width: 100%;\n        padding: 136px 20px 120px 20px; } }\n    .hero-block .hero-inner .hero-headline {\n      color: white;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 54px;\n          line-height: 62px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-headline {\n          font-size: 30px;\n          line-height: 42px; } }\n    .hero-block .hero-inner .hero-divider {\n      background: #AAAAAA;\n      display: block;\n      height: 1px;\n      margin: 15px auto 38px auto;\n      position: relative;\n      width: 717px; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 12px auto 28px auto;\n          width: 617px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 14px auto 24px auto;\n          width: 427px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-divider {\n          margin: 14px auto 24px auto;\n          width: calc(100% - 40px); } }\n    .hero-block .hero-inner .hero-description {\n      color: #B9B9B9;\n      font-family: \"Stix-Italic\";\n      font-style: italic;\n      font-size: 28px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 18px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-description {\n          font-size: 16px; } }\n    .hero-block .hero-inner .hero-button-link {\n      display: inline-block;\n      left: 50%;\n      margin-top: 90px;\n      position: relative;\n      -webkit-transform: translateX(-50%);\n      -moz-transform: translateX(-50%);\n      -ms-transform: translateX(-50%);\n      -o-transform: translateX(-50%);\n      transform: translateX(-50%); }\n      @media screen and (max-width: 1000px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 65px; } }\n      @media screen and (max-width: 750px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 55px; } }\n      @media screen and (max-width: 500px) {\n        .hero-block .hero-inner .hero-button-link {\n          margin-top: 36px; } }\n      .hero-block .hero-inner .hero-button-link #hero-button {\n        background: none;\n        border: 4px solid #FFC600;\n        cursor: pointer;\n        height: 66px;\n        width: 375px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n        @media screen and (max-width: 1000px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: 60px;\n            width: 350px; } }\n        @media screen and (max-width: 750px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: 54px;\n            width: 325px; } }\n        @media screen and (max-width: 500px) {\n          .hero-block .hero-inner .hero-button-link #hero-button {\n            height: auto;\n            width: 100%; } }\n        .hero-block .hero-inner .hero-button-link #hero-button:hover {\n          background: #FFC600; }\n          .hero-block .hero-inner .hero-button-link #hero-button:hover .button-text {\n            color: white; }\n        .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n          color: #FFC600;\n          font-size: 20px;\n          font-weight: 700;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 1000px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              font-size: 18px; } }\n          @media screen and (max-width: 750px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              font-size: 17px; } }\n          @media screen and (max-width: 500px) {\n            .hero-block .hero-inner .hero-button-link #hero-button .button-text {\n              padding: 10px 14px;\n              font-size: 14px; } }\n\n.press-block {\n  background: #CCCCCC;\n  display: block;\n  padding: 64px 10px 24px 10px; }\n  .press-block .press-description {\n    color: #555555;\n    display: block;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .press-block .press-description {\n        font-size: 26px; } }\n    @media screen and (max-width: 750px) {\n      .press-block .press-description {\n        font-size: 24px; } }\n  .press-block .press-list {\n    display: block;\n    margin: 10px auto;\n    max-width: 1318px;\n    text-align: center; }\n    @media screen and (max-width: 1338px) {\n      .press-block .press-list {\n        max-width: 1000px; } }\n    .press-block .press-list .press-item {\n      display: inline-block;\n      list-style: none;\n      margin: 40px 40px; }\n      @media screen and (max-width: 1338px) {\n        .press-block .press-list .press-item {\n          margin: 30px 40px; } }\n      .press-block .press-list .press-item #forbes {\n        width: 106px; }\n      .press-block .press-list .press-item #usatoday {\n        width: 160px; }\n      .press-block .press-list .press-item #cnn {\n        width: 64px; }\n      .press-block .press-list .press-item #techcrunch {\n        width: 212px; }\n      .press-block .press-list .press-item #bloomberg {\n        width: 150px; }\n      .press-block .press-list .press-item #fortune {\n        width: 154px; }\n      .press-block .press-list .press-item img {\n        height: 30px; }\n\n.capabilities-block {\n  background: url(" + __webpack_require__(537) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100vw; }\n  .capabilities-block .capabilities-inner {\n    display: block;\n    margin: 0 auto;\n    position: relative;\n    padding: 200px 0; }\n    @media screen and (max-width: 1338px) {\n      .capabilities-block .capabilities-inner {\n        padding: 180px 0; } }\n    @media screen and (max-width: 1000px) {\n      .capabilities-block .capabilities-inner {\n        padding: 160px 0; } }\n    @media screen and (max-width: 750px) {\n      .capabilities-block .capabilities-inner {\n        padding: 140px 0; } }\n    @media screen and (max-width: 750px) {\n      .capabilities-block .capabilities-inner {\n        padding: 100px 0; } }\n    .capabilities-block .capabilities-inner .capabilities-headline {\n      color: white;\n      display: block;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      margin: 0 auto;\n      max-width: 990px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 54px;\n          line-height: 62px;\n          max-width: 850px;\n          padding: 0 30px; } }\n      @media screen and (max-width: 850px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          max-width: 750px; } }\n      @media screen and (max-width: 750px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 44px;\n          line-height: 50px;\n          max-width: 710px;\n          padding: 0 30px; } }\n      @media screen and (max-width: 710px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          max-width: 620px; } }\n      @media screen and (max-width: 500px) {\n        .capabilities-block .capabilities-inner .capabilities-headline {\n          font-size: 30px;\n          line-height: 40px;\n          max-width: 100%;\n          padding: 0 20px; } }\n    .capabilities-block .capabilities-inner .capabilities-list {\n      display: block;\n      margin: 80px auto 0 auto;\n      max-width: 1315px;\n      text-align: center; }\n      @media screen and (max-width: 1338px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 50px auto 0 auto;\n          max-width: 900px; } }\n      @media screen and (max-width: 1000px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 30px auto 0 auto; } }\n      @media screen and (max-width: 750px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          margin: 20px auto 0 auto; } }\n      @media screen and (max-width: 500px) {\n        .capabilities-block .capabilities-inner .capabilities-list {\n          max-width: 400px;\n          margin: 10px auto 0 auto; } }\n      .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n        display: inline-block;\n        margin: 50px 70px 0 70px;\n        text-align: center; }\n        @media screen and (max-width: 1338px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            min-width: 102px; } }\n        @media screen and (max-width: 750px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            margin: 50px 50px 0 50px;\n            min-width: 96px; } }\n        @media screen and (max-width: 500px) {\n          .capabilities-block .capabilities-inner .capabilities-list .capabilities-item {\n            margin: 50px 30px 0 30px;\n            min-width: 90px; } }\n        .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n          vertical-align: top;\n          width: 65px; }\n          @media screen and (max-width: 1000px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n              width: 55px; } }\n          @media screen and (max-width: 500px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item img {\n              width: 50px; } }\n        .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n          color: #FFC600;\n          font-size: 18px;\n          font-weight: 600;\n          margin-top: 35px; }\n          @media screen and (max-width: 750px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n              font-size: 17px;\n              margin-top: 32px; } }\n          @media screen and (max-width: 500px) {\n            .capabilities-block .capabilities-inner .capabilities-list .capabilities-item .capabilities-text {\n              font-size: 16px;\n              margin-top: 30px; } }\n\n.inspire-block {\n  background: #333333;\n  display: block;\n  padding: 20px 0; }\n  .inspire-block .inspire-text {\n    color: #b5b5b5;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    line-height: 43px;\n    margin: 80px auto;\n    max-width: 854px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .inspire-block .inspire-text {\n        font-size: 24px;\n        max-width: 700px;\n        margin: 60px auto; } }\n    @media screen and (max-width: 750px) {\n      .inspire-block .inspire-text {\n        font-size: 20px;\n        max-width: 570px;\n        margin: 50px auto;\n        padding: 0 30px; } }\n\n.work-block {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around; }\n  .work-block .work-item {\n    cursor: pointer;\n    flex-basis: 33.33%;\n    height: 600px;\n    padding: 50px;\n    position: relative; }\n    @media screen and (max-width: 1000px) {\n      .work-block .work-item {\n        flex-basis: 50%;\n        height: 500px; } }\n    @media screen and (max-width: 500px) {\n      .work-block .work-item {\n        flex-basis: 100%;\n        height: 500px; } }\n    .work-block .work-item:hover:before {\n      background: rgba(0, 0, 0, 0.7); }\n    .work-block .work-item:before {\n      background: rgba(35, 54, 112, 0.7);\n      bottom: 0;\n      content: '';\n      left: 0;\n      position: absolute;\n      right: 0;\n      top: 0;\n      z-index: 1;\n      -webkit-transition: all 0.2s;\n      -moz-transition: all 0.2s;\n      -o-transition: all 0.2s;\n      transition: all 0.2s; }\n    .work-block .work-item#labor {\n      background: url(" + __webpack_require__(538) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#crowdsourcing {\n      background: url(" + __webpack_require__(539) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#healthcare {\n      background: url(" + __webpack_require__(540) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#fitness {\n      background: url(" + __webpack_require__(541) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#unicorn {\n      background: url(" + __webpack_require__(542) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover; }\n    .work-block .work-item#wind {\n      background: url(" + __webpack_require__(543) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: cover;\n      cursor: not-allowed; }\n      .work-block .work-item#wind:hover:before {\n        background: rgba(246, 199, 34, 0.7);\n        bottom: 0;\n        content: '';\n        left: 0;\n        position: absolute;\n        right: 0;\n        top: 0;\n        z-index: 1; }\n    .work-block .work-item:nth-child(1) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 220px; }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item:nth-child(1) .work-text {\n          max-width: 200px; } }\n    .work-block .work-item:nth-child(2) .work-text {\n      font-weight: 900;\n      max-width: 200px; }\n    .work-block .work-item:nth-child(3) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 270px; }\n    .work-block .work-item:nth-child(4) .work-text {\n      font-weight: 900;\n      max-width: 240px; }\n    .work-block .work-item:nth-child(5) .work-text {\n      font-family: \"Stix-BoldItalic\";\n      max-width: 300px; }\n    .work-block .work-item:nth-child(6) .work-text {\n      font-weight: 900;\n      max-width: 260px; }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item:nth-child(6) .work-text {\n          max-width: 220px; } }\n    .work-block .work-item .work-text {\n      bottom: 50px;\n      color: white;\n      font-size: 48px;\n      left: 50px;\n      line-height: 54px;\n      position: absolute;\n      text-align: left;\n      z-index: 2; }\n      @media screen and (max-width: 1338px) {\n        .work-block .work-item .work-text {\n          bottom: 44px;\n          font-size: 44px;\n          left: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 1000px) {\n        .work-block .work-item .work-text {\n          bottom: 40px;\n          font-size: 40px;\n          left: 40px; } }\n      @media screen and (max-width: 750px) {\n        .work-block .work-item .work-text {\n          bottom: 32px;\n          font-size: 32px;\n          left: 32px; } }\n      .work-block .work-item .work-text:after {\n        content: url(" + __webpack_require__(544) + ");\n        height: 19px;\n        margin-left: 5px;\n        margin-top: -1px;\n        position: absolute;\n        width: 21px; }\n\n.people-block {\n  background: #cccccc;\n  display: block;\n  padding: 20px 0; }\n  .people-block .people-text {\n    color: #555555;\n    font-family: \"Stix-Italic\";\n    font-size: 28px;\n    line-height: 43px;\n    margin: 80px auto;\n    max-width: 854px;\n    text-align: center; }\n    @media screen and (max-width: 1000px) {\n      .people-block .people-text {\n        font-size: 24px;\n        max-width: 724px;\n        margin: 60px auto; } }\n    @media screen and (max-width: 750px) {\n      .people-block .people-text {\n        font-size: 20px;\n        max-width: 520px;\n        margin: 50px auto;\n        padding: 0 24px; } }\n    .people-block .people-text #team-arrow {\n      background: url(" + __webpack_require__(544) + ");\n      background-position: center;\n      background-repeat: no-repeat;\n      background-size: 21px 19px;\n      box-sizing: content-box;\n      cursor: pointer;\n      height: 19px;\n      margin-top: 3px;\n      padding: 10px 5px;\n      position: absolute;\n      width: 21px; }\n\n.cta-block {\n  background: url(" + __webpack_require__(545) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  display: block;\n  width: 100%; }\n  .cta-block .cta-inner {\n    display: block;\n    margin: 0 auto;\n    max-width: 580px;\n    padding: 174px 0; }\n    @media screen and (max-width: 1000px) {\n      .cta-block .cta-inner {\n        max-width: 480px;\n        padding: 150px 0; } }\n    @media screen and (max-width: 750px) {\n      .cta-block .cta-inner {\n        max-width: 390px;\n        padding: 130px 0; } }\n    @media screen and (max-width: 500px) {\n      .cta-block .cta-inner {\n        max-width: 100%;\n        padding: 120px 20px; } }\n    .cta-block .cta-inner .cta-headline {\n      color: white;\n      font-size: 66px;\n      font-weight: 300;\n      line-height: 77px;\n      text-align: center; }\n      @media screen and (max-width: 1000px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 54px;\n          line-height: 62px; } }\n      @media screen and (max-width: 750px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 44px;\n          line-height: 50px; } }\n      @media screen and (max-width: 500px) {\n        .cta-block .cta-inner .cta-headline {\n          font-size: 30px;\n          line-height: 44px;\n          margin: 0 auto;\n          max-width: 280px; } }\n    .cta-block .cta-inner .cta-button-link {\n      display: inline-block;\n      left: 50%;\n      margin-top: 50px;\n      position: relative;\n      -webkit-transform: translateX(-50%);\n      -moz-transform: translateX(-50%);\n      -ms-transform: translateX(-50%);\n      -o-transform: translateX(-50%);\n      transform: translateX(-50%); }\n      @media screen and (max-width: 1000px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 45px; } }\n      @media screen and (max-width: 750px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 40px; } }\n      @media screen and (max-width: 500px) {\n        .cta-block .cta-inner .cta-button-link {\n          margin-top: 35px; } }\n      .cta-block .cta-inner .cta-button-link #cta-button {\n        background: none;\n        border: 4px solid #FFC600;\n        cursor: pointer;\n        height: 65px;\n        width: 375px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n        @media screen and (max-width: 1000px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: 60px;\n            width: 350px; } }\n        @media screen and (max-width: 750px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: 55px;\n            width: 325px; } }\n        @media screen and (max-width: 500px) {\n          .cta-block .cta-inner .cta-button-link #cta-button {\n            height: auto;\n            width: 100%; } }\n        .cta-block .cta-inner .cta-button-link #cta-button:hover {\n          background: #FFC600; }\n          .cta-block .cta-inner .cta-button-link #cta-button:hover .button-text {\n            color: white; }\n        .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n          color: #FFC600;\n          font-size: 20px;\n          font-weight: 700;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 1000px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              font-size: 18px; } }\n          @media screen and (max-width: 1000px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              font-size: 17px; } }\n          @media screen and (max-width: 500px) {\n            .cta-block .cta-inner .cta-button-link #cta-button .button-text {\n              padding: 10px 14px;\n              font-size: 14px; } }\n", ""]);
 	
 	// exports
 
@@ -34776,31 +34822,31 @@
 /* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "wind.png";
+	module.exports = __webpack_require__.p + "crowdsourcing.png";
 
 /***/ }),
 /* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "crowdsourcing.png";
+	module.exports = __webpack_require__.p + "healthcare.png";
 
 /***/ }),
 /* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "healthcare.png";
+	module.exports = __webpack_require__.p + "fitness.png";
 
 /***/ }),
 /* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fitness.png";
+	module.exports = __webpack_require__.p + "unicorn.png";
 
 /***/ }),
 /* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "unicorn.png";
+	module.exports = __webpack_require__.p + "wind.png";
 
 /***/ }),
 /* 544 */
@@ -35007,7 +35053,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Prior to Fast Rope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.'
+	                  'Prior to FastRope Labs, Dhruva co-founded Latch, a company providing connected security and access solutions that has raised over $20 million.  Dhruva started his career at a health informatics company where he led and managed technology engagements with multiple Fortune 500 companies, including UnitedHealth and Qualcomm Health.'
 	                )
 	              )
 	            ),
@@ -35026,7 +35072,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Jon is Fast Rope\u2019s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.'
+	                  'Jon is FastRope\u2019s hard-charging PM with insatiable curiosity and a knack for solving problems. He began his career in FinTech working with a boutique advisory firm building proprietary tools for large institutional investors. Since then, he has worked at Deloitte, helped launch Main Street Genome, and a founded a full stack office catering company.'
 	                )
 	              )
 	            ),
@@ -35083,7 +35129,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Before consulting for Fast Rope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.'
+	                  'Before consulting for FastRope Labs, Andrew spent 8 years as a personal trainer and small business operator. Andrew also designed and founded a wellness program at an $18 million dollar non profit organization. Andrew has a Bachelors degree in Kinesiology and is a Certified Strength and Conditioning Specialist.'
 	                )
 	              )
 	            ),
@@ -35146,8 +35192,65 @@
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              { id: 'partha', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              { id: 'gil', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
 	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(570) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Andrew Gil, Fullstack Engineer'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Andrew loves transforming large, raw datasets into actionable results. He is experienced in the entire data pipeline including data collection, cleaning, analysis, machine learning, and data visualization. He\'s previously worked at Main Street Genome and Epic.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'josh', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(571) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Josh Tackett, Fullstack Engineer'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'matt', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(572) }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'teammate-overlay' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'teammate-title' },
+	                  'Matt Blank, Product Manager'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'teammate-description' },
+	                  'Matt has a passion for getting new ventures off the ground, having worked for multiple venture-backed startups and launched projects of his own. He most recently worked as a consultant for Deloitte and is likely wearing a combination of Lululemon, Bonobos, and Allbirds as you\u2019re reading this.'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'partha', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(573) }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'teammate-overlay' },
@@ -35166,7 +35269,7 @@
 	            _react2.default.createElement(
 	              'li',
 	              { id: 'leah', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
-	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(571) }),
+	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(574) }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'teammate-overlay' },
@@ -35178,23 +35281,8 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Roles ranges from graphic design, photography, video and creative coordination. She\u2019s previously worked with Worn Creative, LenDePas Photography and Flavor Group.'
+	                  'Leah\'s creative expertise ranges from graphic design, user experience design, visual design, and photography and video production. She\'s formerly worked with Worn Creative, Len DePas Photography and Flavor Group. Leah has a BA in Media Studies from Scripps College.'
 	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { id: 'matt', className: 'teammate', tabIndex: '1', onFocus: this.openOverlay, onBlur: this.closeOverlay },
-	              _react2.default.createElement('img', { className: 'teammate-pic', src: __webpack_require__(572) }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'teammate-overlay' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  { className: 'teammate-title' },
-	                  'Matt Blank, Associate Product Manager'
-	                ),
-	                _react2.default.createElement('p', { className: 'teammate-description' })
 	              )
 	            )
 	          )
@@ -35307,13 +35395,13 @@
 /* 570 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "partha.png";
+	module.exports = __webpack_require__.p + "gil.png";
 
 /***/ }),
 /* 571 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "leah.png";
+	module.exports = __webpack_require__.p + "josh.png";
 
 /***/ }),
 /* 572 */
@@ -35323,6 +35411,18 @@
 
 /***/ }),
 /* 573 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "partha.png";
+
+/***/ }),
+/* 574 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "leah.png";
+
+/***/ }),
+/* 575 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35345,7 +35445,7 @@
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _jquery = __webpack_require__(574);
+	var _jquery = __webpack_require__(576);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -35357,7 +35457,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(575);
+	__webpack_require__(577);
 	
 	var Contact = function (_React$Component) {
 	  _inherits(Contact, _React$Component);
@@ -35487,11 +35587,16 @@
 	            'h1',
 	            { className: 'contact-headline' },
 	            'Get in Touch'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'contact-description' },
+	            'We\'d love to hear from you'
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { id: 'contact-heading', className: 'contact-form' },
+	          { className: 'contact-form' },
 	          status,
 	          _react2.default.createElement(
 	            'form',
@@ -35536,7 +35641,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'R and D', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(578) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(580) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35547,7 +35652,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'Hardware', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(579) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(581) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35558,7 +35663,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'Growth', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(580) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(582) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35569,7 +35674,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'Design', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(581) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(583) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35580,7 +35685,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'Software', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(582) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(584) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35591,7 +35696,7 @@
 	                  'label',
 	                  { className: 'interest-inline' },
 	                  _react2.default.createElement('input', { className: 'interest', name: 'interest', ref: 'interest', type: 'radio', value: 'Data', onClick: this.interestChange }),
-	                  _react2.default.createElement('img', { src: __webpack_require__(583) }),
+	                  _react2.default.createElement('img', { src: __webpack_require__(585) }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    null,
@@ -35615,7 +35720,7 @@
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
-	                  'IMMEADIATELY'
+	                  'IMMEDIATELY'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -35681,20 +35786,6 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { id: 'get-in-touch', className: 'contact-cta' },
-	            _react2.default.createElement(
-	              'h1',
-	              { className: 'contact-cta-title' },
-	              'Get in Touch'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'contact-cta-text' },
-	              'We\u2019d love to hear from you.  Whether it\u2019s a project idea, a question for us, or if you just want to say hi. We\u2019d love to hear from you!'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
 	            { id: 'find-us', className: 'contact-cta' },
 	            _react2.default.createElement(
 	              'h1',
@@ -35723,7 +35814,7 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 574 */
+/* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -45982,13 +46073,13 @@
 
 
 /***/ }),
-/* 575 */
+/* 577 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(576);
+	var content = __webpack_require__(578);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(528)(content, {});
@@ -46008,7 +46099,7 @@
 	}
 
 /***/ }),
-/* 576 */
+/* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(525)();
@@ -46016,55 +46107,55 @@
 	
 	
 	// module
-	exports.push([module.id, ".contact-hero {\n  background: url(" + __webpack_require__(577) + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  padding: 200px 0 284px 0; }\n  @media screen and (max-width: 675px) {\n    .contact-hero {\n      padding: 200px 0 200px 0; } }\n  .contact-hero .contact-headline {\n    color: white;\n    font-family: \"Stix-Bold\";\n    font-size: 48px;\n    text-align: center; }\n\n.contact-form {\n  background: white;\n  box-sizing: border-box;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);\n  display: inline-block;\n  left: 50%;\n  padding: 45px 60px;\n  position: relative;\n  top: -80px;\n  max-width: 675px;\n  width: 100%;\n  -webkit-transform: translateX(-50%);\n  -moz-transform: translateX(-50%);\n  -ms-transform: translateX(-50%);\n  -o-transform: translateX(-50%);\n  transform: translateX(-50%); }\n  @media screen and (max-width: 675px) {\n    .contact-form {\n      padding: 40px 40px;\n      top: 0px; } }\n  @media screen and (max-width: 675px) {\n    .contact-form {\n      padding: 40px 30px; } }\n  @media screen and (max-width: 500px) {\n    .contact-form {\n      padding: 40px 20px; } }\n  .contact-form form .form-group .form-control {\n    border: 3px solid #CACACA;\n    height: 75px;\n    font-size: 20px;\n    font-family: 'Open Sans', sans-serif;\n    line-height: 30px;\n    margin-bottom: 20px;\n    outline: none;\n    padding: 20px;\n    width: 100%; }\n    .contact-form form .form-group .form-control:focus {\n      border: 3px solid black; }\n      .contact-form form .form-group .form-control:focus::placeholder {\n        color: black; }\n    .contact-form form .form-group .form-control::placeholder {\n      color: #C3C3C3;\n      text-align: center; }\n    .contact-form form .form-group .form-control#message {\n      min-height: 208px; }\n  .contact-form form .form-group#interests {\n    border: 3px solid #CACACA;\n    box-sizing: content-box;\n    height: 280px;\n    margin-bottom: 20px;\n    padding: 0 32px;\n    text-align: center; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#interests {\n        height: 370px;\n        padding: 0; } }\n    @media screen and (max-width: 515px) {\n      .contact-form form .form-group#interests {\n        box-sizing: border-box;\n        height: 592px; } }\n    .contact-form form .form-group#interests h3 {\n      color: #C3C3C3;\n      font-family: 'Open Sans', sans-serif;\n      font-size: 20px;\n      font-weight: 400;\n      padding: 20px 0 0 0; }\n    .contact-form form .form-group#interests .interests-inner {\n      margin: 0 auto; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#interests .interests-inner {\n          max-width: 340px; } }\n      .contact-form form .form-group#interests .interests-inner .interest-inline {\n        cursor: pointer;\n        display: inline-block;\n        min-width: 80px;\n        margin: 10px 40px; }\n        @media screen and (max-width: 515px) {\n          .contact-form form .form-group#interests .interests-inner .interest-inline {\n            display: block;\n            margin: 10px auto;\n            width: 100px; } }\n        .contact-form form .form-group#interests .interests-inner .interest-inline .interest {\n          height: 0;\n          opacity: 0; }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:hover ~ img {\n            opacity: 1;\n            -webkit-filter: grayscale(0);\n            -moz-filter: grayscale(0);\n            -ms-filter: grayscale(0);\n            -o-filter: grayscale(0);\n            filter: grayscale(0); }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:hover ~ p {\n            color: #FFC600; }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:checked ~ img {\n            opacity: 1;\n            -webkit-filter: grayscale(0);\n            -moz-filter: grayscale(0);\n            -ms-filter: grayscale(0);\n            -o-filter: grayscale(0);\n            filter: grayscale(0); }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:checked ~ p {\n            color: #FFC600; }\n        .contact-form form .form-group#interests .interests-inner .interest-inline img {\n          display: block;\n          margin: 0 auto;\n          vertical-align: top;\n          width: 30px;\n          -webkit-filter: grayscale(100%);\n          -moz-filter: grayscale(100%);\n          -ms-filter: grayscale(100%);\n          -o-filter: grayscale(100%);\n          filter: grayscale(100%);\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n        .contact-form form .form-group#interests .interests-inner .interest-inline p {\n          color: #AAA9A9;\n          font-size: 15px;\n          font-weight: 500;\n          margin-top: 8px;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n  .contact-form form .form-group#when {\n    border: 3px solid #CACACA;\n    box-sizing: border-box;\n    height: 240px;\n    padding: 0 32px; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#when {\n        height: 420px; } }\n    @media screen and (max-width: 435px) {\n      .contact-form form .form-group#when {\n        height: 434px; } }\n    .contact-form form .form-group#when h3 {\n      color: #C3C3C3;\n      font-family: 'Open Sans', sans-serif;\n      font-size: 20px;\n      font-weight: 400;\n      padding: 20px 0 20px 0;\n      text-align: center; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#when h3 {\n          padding-bottom: 10px; } }\n    .contact-form form .form-group#when .radio-inline {\n      cursor: pointer;\n      display: inline-block;\n      min-width: 150px;\n      margin: 15px 0px 15px 60px;\n      text-align: left; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#when .radio-inline {\n          display: block;\n          margin: 15px auto;\n          max-width: 200px;\n          padding: 10px 0; } }\n      .contact-form form .form-group#when .radio-inline:hover span {\n        color: black; }\n      .contact-form form .form-group#when .radio-inline input {\n        cursor: pointer; }\n      .contact-form form .form-group#when .radio-inline span {\n        color: #AAA9A9;\n        font-size: 15px;\n        font-weight: 500;\n        margin-left: 10px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n  .contact-form form .form-group#submit .btn {\n    background: #433B6B;\n    border: 0;\n    color: white;\n    cursor: pointer;\n    display: block;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 25px;\n    font-weight: 300;\n    height: 70px;\n    margin: 50px auto 15px auto;\n    text-align: center;\n    width: 420px;\n    -webkit-transition: all 0.2s;\n    -moz-transition: all 0.2s;\n    -o-transition: all 0.2s;\n    transition: all 0.2s; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#submit .btn {\n        font-size: 22px;\n        height: 62px;\n        margin: 42px auto 12px auto;\n        width: 380px; } }\n    @media screen and (max-width: 515px) {\n      .contact-form form .form-group#submit .btn {\n        font-size: 20px;\n        height: 56px;\n        margin: 36px auto 10px auto;\n        width: 100%; } }\n    .contact-form form .form-group#submit .btn:hover {\n      opacity: 0.8; }\n  .contact-form .contact-cta {\n    position: absolute; }\n    @media screen and (max-width: 1338px) {\n      .contact-form .contact-cta {\n        display: inline-block;\n        position: relative; } }\n    .contact-form .contact-cta#get-in-touch {\n      left: -280px;\n      max-width: 250px;\n      top: 170px; }\n      @media screen and (max-width: 1338px) {\n        .contact-form .contact-cta#get-in-touch {\n          left: auto;\n          margin-top: 30px;\n          max-width: 100%;\n          text-align: left;\n          top: auto; } }\n    .contact-form .contact-cta#find-us {\n      max-width: 230px;\n      right: -260px;\n      top: 170px; }\n      @media screen and (max-width: 1338px) {\n        .contact-form .contact-cta#find-us {\n          margin-top: 30px;\n          max-width: 100%;\n          right: auto;\n          text-align: left;\n          top: auto; } }\n    .contact-form .contact-cta .contact-cta-title {\n      color: #535353;\n      font-family: \"Stix-Bold\";\n      font-size: 35px; }\n      @media screen and (max-width: 675px) {\n        .contact-form .contact-cta .contact-cta-title {\n          font-size: 32px; } }\n    .contact-form .contact-cta .contact-cta-text {\n      color: #535353;\n      font-family: \"Stix-Regular\";\n      font-size: 20px;\n      font-size: 18px; }\n", ""]);
+	exports.push([module.id, ".contact-hero {\n  background: url(" + __webpack_require__(579) + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  padding: 200px 0 284px 0; }\n  @media screen and (max-width: 675px) {\n    .contact-hero {\n      padding: 200px 0 200px 0; } }\n  .contact-hero .contact-headline {\n    color: white;\n    font-family: \"Stix-Bold\";\n    font-size: 48px;\n    text-align: center; }\n  .contact-hero .contact-description {\n    color: white;\n    font-size: 20px;\n    font-weight: 400;\n    margin: 8px auto 0 auto;\n    text-align: center; }\n\n.contact-form {\n  background: white;\n  box-sizing: border-box;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);\n  display: inline-block;\n  left: 50%;\n  padding: 45px 60px;\n  position: relative;\n  top: -80px;\n  max-width: 675px;\n  width: 100%;\n  -webkit-transform: translateX(-50%);\n  -moz-transform: translateX(-50%);\n  -ms-transform: translateX(-50%);\n  -o-transform: translateX(-50%);\n  transform: translateX(-50%); }\n  @media screen and (max-width: 675px) {\n    .contact-form {\n      padding: 40px 40px;\n      top: 0px; } }\n  @media screen and (max-width: 675px) {\n    .contact-form {\n      padding: 40px 30px; } }\n  @media screen and (max-width: 500px) {\n    .contact-form {\n      padding: 40px 20px; } }\n  .contact-form form .form-group .form-control {\n    border: 3px solid #CACACA;\n    height: 75px;\n    font-size: 20px;\n    font-family: 'Open Sans', sans-serif;\n    line-height: 30px;\n    margin-bottom: 20px;\n    outline: none;\n    padding: 20px;\n    width: 100%; }\n    .contact-form form .form-group .form-control:focus {\n      border: 3px solid black; }\n      .contact-form form .form-group .form-control:focus::placeholder {\n        color: black; }\n    .contact-form form .form-group .form-control::placeholder {\n      color: #C3C3C3;\n      text-align: center; }\n    .contact-form form .form-group .form-control#message {\n      min-height: 208px; }\n  .contact-form form .form-group#interests {\n    border: 3px solid #CACACA;\n    box-sizing: content-box;\n    height: 280px;\n    margin-bottom: 20px;\n    padding: 0 32px;\n    text-align: center; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#interests {\n        height: 370px;\n        padding: 0; } }\n    @media screen and (max-width: 515px) {\n      .contact-form form .form-group#interests {\n        box-sizing: border-box;\n        height: 592px; } }\n    .contact-form form .form-group#interests h3 {\n      color: #C3C3C3;\n      font-family: 'Open Sans', sans-serif;\n      font-size: 20px;\n      font-weight: 400;\n      padding: 20px 0 0 0; }\n    .contact-form form .form-group#interests .interests-inner {\n      margin: 0 auto; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#interests .interests-inner {\n          max-width: 340px; } }\n      .contact-form form .form-group#interests .interests-inner .interest-inline {\n        cursor: pointer;\n        display: inline-block;\n        min-width: 80px;\n        margin: 10px 40px; }\n        @media screen and (max-width: 515px) {\n          .contact-form form .form-group#interests .interests-inner .interest-inline {\n            display: block;\n            margin: 10px auto;\n            width: 100px; } }\n        .contact-form form .form-group#interests .interests-inner .interest-inline .interest {\n          height: 0;\n          opacity: 0; }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:hover ~ img {\n            opacity: 1;\n            -webkit-filter: grayscale(0);\n            -moz-filter: grayscale(0);\n            -ms-filter: grayscale(0);\n            -o-filter: grayscale(0);\n            filter: grayscale(0); }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:hover ~ p {\n            color: #FFC600; }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:checked ~ img {\n            opacity: 1;\n            -webkit-filter: grayscale(0);\n            -moz-filter: grayscale(0);\n            -ms-filter: grayscale(0);\n            -o-filter: grayscale(0);\n            filter: grayscale(0); }\n          .contact-form form .form-group#interests .interests-inner .interest-inline .interest:checked ~ p {\n            color: #FFC600; }\n        .contact-form form .form-group#interests .interests-inner .interest-inline img {\n          display: block;\n          margin: 0 auto;\n          vertical-align: top;\n          width: 30px;\n          -webkit-filter: grayscale(100%);\n          -moz-filter: grayscale(100%);\n          -ms-filter: grayscale(100%);\n          -o-filter: grayscale(100%);\n          filter: grayscale(100%);\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n        .contact-form form .form-group#interests .interests-inner .interest-inline p {\n          color: #AAA9A9;\n          font-size: 15px;\n          font-weight: 500;\n          margin-top: 8px;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n  .contact-form form .form-group#when {\n    border: 3px solid #CACACA;\n    box-sizing: border-box;\n    height: 240px;\n    padding: 0 32px; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#when {\n        height: 420px; } }\n    @media screen and (max-width: 435px) {\n      .contact-form form .form-group#when {\n        height: 434px; } }\n    .contact-form form .form-group#when h3 {\n      color: #C3C3C3;\n      font-family: 'Open Sans', sans-serif;\n      font-size: 20px;\n      font-weight: 400;\n      padding: 20px 0 20px 0;\n      text-align: center; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#when h3 {\n          padding-bottom: 10px; } }\n    .contact-form form .form-group#when .radio-inline {\n      cursor: pointer;\n      display: inline-block;\n      min-width: 150px;\n      margin: 15px 0px 15px 60px;\n      text-align: left; }\n      @media screen and (max-width: 675px) {\n        .contact-form form .form-group#when .radio-inline {\n          display: block;\n          margin: 15px auto;\n          max-width: 200px;\n          padding: 10px 0; } }\n      .contact-form form .form-group#when .radio-inline:hover span {\n        color: black; }\n      .contact-form form .form-group#when .radio-inline input {\n        cursor: pointer; }\n      .contact-form form .form-group#when .radio-inline span {\n        color: #AAA9A9;\n        font-size: 15px;\n        font-weight: 500;\n        margin-left: 10px;\n        -webkit-transition: all 0.2s;\n        -moz-transition: all 0.2s;\n        -o-transition: all 0.2s;\n        transition: all 0.2s; }\n  .contact-form form .form-group#submit .btn {\n    background: #433B6B;\n    border: 0;\n    color: white;\n    cursor: pointer;\n    display: block;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 25px;\n    font-weight: 300;\n    height: 70px;\n    margin: 50px auto 15px auto;\n    text-align: center;\n    width: 420px;\n    -webkit-transition: all 0.2s;\n    -moz-transition: all 0.2s;\n    -o-transition: all 0.2s;\n    transition: all 0.2s; }\n    @media screen and (max-width: 675px) {\n      .contact-form form .form-group#submit .btn {\n        font-size: 22px;\n        height: 62px;\n        margin: 42px auto 12px auto;\n        width: 380px; } }\n    @media screen and (max-width: 515px) {\n      .contact-form form .form-group#submit .btn {\n        font-size: 20px;\n        height: 56px;\n        margin: 36px auto 10px auto;\n        width: 100%; } }\n    .contact-form form .form-group#submit .btn:hover {\n      opacity: 0.8; }\n  .contact-form .contact-cta {\n    position: absolute; }\n    @media screen and (max-width: 1338px) {\n      .contact-form .contact-cta {\n        display: inline-block;\n        position: relative; } }\n    .contact-form .contact-cta#find-us {\n      max-width: 230px;\n      right: -260px;\n      top: 170px; }\n      @media screen and (max-width: 1338px) {\n        .contact-form .contact-cta#find-us {\n          margin-top: 30px;\n          max-width: 100%;\n          right: auto;\n          text-align: left;\n          top: auto; } }\n    .contact-form .contact-cta .contact-cta-title {\n      color: #535353;\n      font-family: \"Stix-Bold\";\n      font-size: 35px; }\n      @media screen and (max-width: 675px) {\n        .contact-form .contact-cta .contact-cta-title {\n          font-size: 32px; } }\n    .contact-form .contact-cta .contact-cta-text {\n      color: #535353;\n      font-family: \"Stix-Regular\";\n      font-size: 20px;\n      font-size: 18px; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 577 */
+/* 579 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "map.png";
 
 /***/ }),
-/* 578 */
+/* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "r_d.png";
 
 /***/ }),
-/* 579 */
+/* 581 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "hardware.png";
 
 /***/ }),
-/* 580 */
+/* 582 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "growth.png";
 
 /***/ }),
-/* 581 */
+/* 583 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "design.png";
 
 /***/ }),
-/* 582 */
+/* 584 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "software.png";
 
 /***/ }),
-/* 583 */
+/* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "data.png";
 
 /***/ }),
-/* 584 */
+/* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46095,7 +46186,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var Wodify = function (_React$Component) {
 	  _inherits(Wodify, _React$Component);
@@ -46129,12 +46220,12 @@
 	            { className: 'case-hero' },
 	            _react2.default.createElement(
 	              'h1',
-	              { className: 'case-headline' },
-	              'WODIFY'
+	              { className: 'case-headline stix-bi' },
+	              'Wodify'
 	            ),
 	            _react2.default.createElement(
 	              'h3',
-	              { className: 'case-tagline' },
+	              { className: 'case-tagline stix-reg' },
 	              'Supercharging human ability'
 	            )
 	          )
@@ -46155,11 +46246,16 @@
 	              { className: 'text' },
 	              'Wodify is a leading gym software company powering over 4000+ crossfit gyms around the world. They wanted to keep up the pace with the fitness industry\u2019s constant innovation and address the growing wearable market.'
 	            ),
-	            _react2.default.createElement('div', { className: 'img' }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(595) }),
+	            _react2.default.createElement(
+	              'h4',
+	              { className: 'text-header' },
+	              'Our Solution'
+	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Fast Rope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
+	              'FastRope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -46176,7 +46272,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(593) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(596) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -46194,7 +46290,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/wodify' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46230,13 +46326,13 @@
 	exports.default = Wodify;
 
 /***/ }),
-/* 585 */
+/* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(586);
+	var content = __webpack_require__(588);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(528)(content, {});
@@ -46256,7 +46352,7 @@
 	}
 
 /***/ }),
-/* 586 */
+/* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(525)();
@@ -46264,55 +46360,61 @@
 	
 	
 	// module
-	exports.push([module.id, ".case-header {\n  display: block;\n  width: 100%; }\n  .case-header#wodify {\n    background: url(" + __webpack_require__(587) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#gwmfa {\n    background: url(" + __webpack_require__(588) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#verite {\n    background: url(" + __webpack_require__(589) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#networkforgood {\n    background: url(" + __webpack_require__(590) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#upside {\n    background: url(" + __webpack_require__(591) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#envision {\n    background: url(" + __webpack_require__(592) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header .case-hero {\n    margin: 0 auto;\n    padding: 200px 0 245px 0;\n    text-align: center; }\n    @media screen and (max-width: 1260px) {\n      .case-header .case-hero {\n        padding: 180px 0 205px 0; } }\n    @media screen and (max-width: 750px) {\n      .case-header .case-hero {\n        padding: 170px 0 170px 0; } }\n    @media screen and (max-width: 500px) {\n      .case-header .case-hero {\n        padding: 160px 0 150px 0; } }\n    .case-header .case-hero .case-headline {\n      box-sizing: content-box;\n      color: white;\n      display: block;\n      font-size: 60px;\n      font-weight: 900;\n      margin: 0 auto;\n      padding-bottom: 90px; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-headline {\n          font-size: 54px;\n          padding-bottom: 75px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-headline {\n          font-size: 48px;\n          padding-bottom: 65px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-headline {\n          font-size: 44px;\n          padding-bottom: 55px; } }\n    .case-header .case-hero .case-tagline {\n      color: white;\n      font-size: 27px;\n      font-weight: 300; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 21px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 18px; } }\n\n.case-content {\n  display: block; }\n  .case-content .content-main {\n    display: inline-block;\n    margin: 100px 10% 100px 140px;\n    width: 675px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-main {\n        display: block;\n        margin: 100px auto;\n        width: 600px; } }\n    @media screen and (max-width: 750px) {\n      .case-content .content-main {\n        margin: 80px auto;\n        width: 450px; } }\n    @media screen and (max-width: 500px) {\n      .case-content .content-main {\n        margin: 60px auto;\n        width: calc(100% - 50px); } }\n    .case-content .content-main .text-header {\n      color: #393939;\n      font-size: 24px;\n      font-weight: 600;\n      line-height: 28px;\n      margin-bottom: 14px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text-header {\n          font-size: 20px;\n          line-height: 24px;\n          margin-bottom: 12px; } }\n    .case-content .content-main .text {\n      color: #393939;\n      font-size: 20px;\n      font-weight: 300;\n      line-height: 28px;\n      margin-bottom: 20px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text {\n          font-size: 16px;\n          line-height: 24px;\n          margin-bottom: 16px; } }\n    .case-content .content-main .example {\n      display: block;\n      height: 250px;\n      margin: 50px auto 45px auto; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .example {\n          height: auto;\n          width: 100%; } }\n    .case-content .content-main .img {\n      background: #cccccc;\n      display: block;\n      height: 250px;\n      margin: 46px 0 60px;\n      width: 100%; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .img {\n          margin: 40px 0 50px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .img {\n          margin: 30px 0 40px; } }\n  .case-content .content-side {\n    display: inline-block;\n    margin: 100px 40px;\n    vertical-align: top;\n    width: 230px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        background: #ededed;\n        display: block;\n        margin: 0;\n        padding: 100px 0;\n        width: 100%; } }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        padding: 60px 0; } }\n    .case-content .content-side .logo-block {\n      display: block;\n      margin: 0 auto;\n      position: relative;\n      width: 160px; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block {\n          width: 600px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block {\n          width: 450px; } }\n      @media screen and (max-width: 500px) {\n        .case-content .content-side .logo-block {\n          width: calc(100% - 50px); } }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: inline-block; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: block; } }\n      .case-content .content-side .logo-block .logo-inner .logo {\n        display: block;\n        width: 160px; }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .logo {\n            margin: 0 auto; } }\n      .case-content .content-side .logo-block .logo-inner .url {\n        cursor: pointer;\n        display: inline-block;\n        left: 50%;\n        margin: 20px 0;\n        padding: 5px;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: auto;\n            padding: 5px 5px 5px 0;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: 50%;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .logo-inner .url:hover .url-text {\n          color: #0704CC;\n          text-decoration: underline; }\n        .case-content .content-side .logo-block .logo-inner .url .url-text {\n          color: #323232;\n          font-size: 28px;\n          font-weight: 400;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 750px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 24px; } }\n          @media screen and (max-width: 500px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 20px; } }\n      .case-content .content-side .logo-block .logo-inner .what-we-did {\n        color: #393939;\n        display: block;\n        margin: 0 auto;\n        text-align: center; }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: left; } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: center; } }\n      .case-content .content-side .logo-block .share-link {\n        display: inline-block;\n        left: 50%;\n        margin: 40px 0;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .share-link {\n            left: auto;\n            position: absolute;\n            right: 0;\n            vertical-align: top;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .share-link {\n            display: inline-block;\n            left: 50%;\n            margin: 40px 0 0 0;\n            position: relative;\n            right: auto;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .share-link .share-button {\n          border: 0;\n          background: #02008B;\n          color: white;\n          cursor: pointer;\n          font-size: 14px;\n          outline: none;\n          padding: 24px 72px;\n          white-space: nowrap;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          .case-content .content-side .logo-block .share-link .share-button:hover {\n            opacity: 0.8; }\n    .case-content .content-side .testimony-block {\n      display: none;\n      margin: 60px auto 0 auto;\n      max-width: 230px; }\n      .case-content .content-side .testimony-block .testimony-pic {\n        background: #6a6a6a;\n        display: block;\n        height: 150px;\n        margin: 0 auto 20px auto;\n        width: 150px; }\n      .case-content .content-side .testimony-block .testimony-text {\n        color: #393939;\n        font-size: 14px;\n        font-weight: 400;\n        font-style: italic;\n        line-height: 20px;\n        margin-bottom: 8px;\n        text-align: center; }\n      .case-content .content-side .testimony-block .testimony-source {\n        color: #393939;\n        font-size: 12px;\n        font-weight: 400;\n        text-align: right; }\n", ""]);
+	exports.push([module.id, ".case-header {\n  display: block;\n  width: 100%; }\n  .case-header#wodify {\n    background: url(" + __webpack_require__(589) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#gwmfa {\n    background: url(" + __webpack_require__(590) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#verite {\n    background: url(" + __webpack_require__(591) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#networkforgood {\n    background: url(" + __webpack_require__(592) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#upside {\n    background: url(" + __webpack_require__(593) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header#envision {\n    background: url(" + __webpack_require__(594) + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .case-header .case-hero {\n    margin: 0 auto;\n    padding: 200px 0 245px 0;\n    text-align: center; }\n    @media screen and (max-width: 1260px) {\n      .case-header .case-hero {\n        padding: 180px 0 205px 0; } }\n    @media screen and (max-width: 750px) {\n      .case-header .case-hero {\n        padding: 170px 0 170px 0; } }\n    @media screen and (max-width: 500px) {\n      .case-header .case-hero {\n        padding: 160px 0 150px 0; } }\n    .case-header .case-hero .case-headline {\n      box-sizing: content-box;\n      color: white;\n      display: block;\n      font-size: 60px;\n      font-weight: 900;\n      margin: 0 auto;\n      padding-bottom: 90px; }\n      .case-header .case-hero .case-headline.robo-reg {\n        font-weight: 400; }\n      .case-header .case-hero .case-headline.stix-bi {\n        font-family: \"Stix-BoldItalic\"; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-headline {\n          font-size: 54px;\n          padding-bottom: 75px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-headline {\n          font-size: 48px;\n          padding-bottom: 65px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-headline {\n          font-size: 44px;\n          padding-bottom: 55px; } }\n    .case-header .case-hero .case-tagline {\n      color: white;\n      font-size: 27px;\n      font-weight: 300; }\n      .case-header .case-hero .case-tagline.stix-reg {\n        font-family: \"Stix-Regular\"; }\n      @media screen and (max-width: 1260px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 24px; } }\n      @media screen and (max-width: 750px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 21px; } }\n      @media screen and (max-width: 500px) {\n        .case-header .case-hero .case-tagline {\n          font-size: 18px; } }\n\n.case-content {\n  display: block; }\n  .case-content .content-main {\n    display: inline-block;\n    margin: 100px 10% 100px 140px;\n    width: 675px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-main {\n        display: block;\n        margin: 100px auto;\n        width: 600px; } }\n    @media screen and (max-width: 750px) {\n      .case-content .content-main {\n        margin: 80px auto;\n        width: 450px; } }\n    @media screen and (max-width: 500px) {\n      .case-content .content-main {\n        margin: 60px auto;\n        width: calc(100% - 50px); } }\n    .case-content .content-main .text-header {\n      color: #393939;\n      font-size: 24px;\n      font-weight: 600;\n      line-height: 28px;\n      margin-bottom: 14px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text-header {\n          font-size: 20px;\n          line-height: 24px;\n          margin-bottom: 12px; } }\n    .case-content .content-main .text {\n      color: #393939;\n      font-size: 20px;\n      font-weight: 300;\n      line-height: 28px;\n      margin-bottom: 20px; }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .text {\n          font-size: 16px;\n          line-height: 24px;\n          margin-bottom: 16px; } }\n    .case-content .content-main .example {\n      display: block;\n      height: 250px;\n      margin: 50px auto 45px auto; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .example {\n          height: auto;\n          width: 100%; } }\n    .case-content .content-main .img {\n      background: #cccccc;\n      display: block;\n      height: 250px;\n      margin: 46px 0 60px;\n      width: 100%; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-main .img {\n          margin: 40px 0 50px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-main .img {\n          margin: 30px 0 40px; } }\n  .case-content .content-side {\n    display: inline-block;\n    margin: 100px 40px;\n    vertical-align: top;\n    width: 230px; }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        background: #ededed;\n        display: block;\n        margin: 0;\n        padding: 100px 0;\n        width: 100%; } }\n    @media screen and (max-width: 1260px) {\n      .case-content .content-side {\n        padding: 60px 0; } }\n    .case-content .content-side .logo-block {\n      display: block;\n      margin: 0 auto;\n      position: relative;\n      width: 160px; }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block {\n          width: 600px; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block {\n          width: 450px; } }\n      @media screen and (max-width: 500px) {\n        .case-content .content-side .logo-block {\n          width: calc(100% - 50px); } }\n      @media screen and (max-width: 1260px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: inline-block; } }\n      @media screen and (max-width: 750px) {\n        .case-content .content-side .logo-block .logo-inner {\n          display: block; } }\n      .case-content .content-side .logo-block .logo-inner .logo {\n        display: block;\n        width: 160px; }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .logo {\n            margin: 0 auto; } }\n      .case-content .content-side .logo-block .logo-inner .url {\n        cursor: pointer;\n        display: inline-block;\n        left: 50%;\n        margin: 20px 0;\n        padding: 5px;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: auto;\n            padding: 5px 5px 5px 0;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .url {\n            left: 50%;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .logo-inner .url:hover .url-text {\n          color: #0704CC;\n          text-decoration: underline; }\n        .case-content .content-side .logo-block .logo-inner .url .url-text {\n          color: #323232;\n          font-size: 28px;\n          font-weight: 400;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          @media screen and (max-width: 750px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 24px; } }\n          @media screen and (max-width: 500px) {\n            .case-content .content-side .logo-block .logo-inner .url .url-text {\n              font-size: 20px; } }\n      .case-content .content-side .logo-block .logo-inner .what-we-did {\n        color: #393939;\n        display: block;\n        margin: 0 auto;\n        text-align: center; }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: left; } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .logo-inner .what-we-did {\n            text-align: center; } }\n      .case-content .content-side .logo-block .share-link {\n        display: inline-block;\n        left: 50%;\n        margin: 40px 0;\n        position: relative;\n        -webkit-transform: translateX(-50%);\n        -moz-transform: translateX(-50%);\n        -ms-transform: translateX(-50%);\n        -o-transform: translateX(-50%);\n        transform: translateX(-50%); }\n        @media screen and (max-width: 1260px) {\n          .case-content .content-side .logo-block .share-link {\n            left: auto;\n            position: absolute;\n            right: 0;\n            vertical-align: top;\n            -webkit-transform: translateX(0);\n            -moz-transform: translateX(0);\n            -ms-transform: translateX(0);\n            -o-transform: translateX(0);\n            transform: translateX(0); } }\n        @media screen and (max-width: 750px) {\n          .case-content .content-side .logo-block .share-link {\n            display: inline-block;\n            left: 50%;\n            margin: 40px 0 0 0;\n            position: relative;\n            right: auto;\n            -webkit-transform: translateX(-50%);\n            -moz-transform: translateX(-50%);\n            -ms-transform: translateX(-50%);\n            -o-transform: translateX(-50%);\n            transform: translateX(-50%); } }\n        .case-content .content-side .logo-block .share-link .share-button {\n          border: 0;\n          background: #02008B;\n          color: white;\n          cursor: pointer;\n          font-size: 14px;\n          outline: none;\n          padding: 24px 72px;\n          white-space: nowrap;\n          -webkit-transition: all 0.2s;\n          -moz-transition: all 0.2s;\n          -o-transition: all 0.2s;\n          transition: all 0.2s; }\n          .case-content .content-side .logo-block .share-link .share-button:hover {\n            opacity: 0.8; }\n    .case-content .content-side .testimony-block {\n      display: none;\n      margin: 60px auto 0 auto;\n      max-width: 230px; }\n      .case-content .content-side .testimony-block .testimony-pic {\n        background: #6a6a6a;\n        display: block;\n        height: 150px;\n        margin: 0 auto 20px auto;\n        width: 150px; }\n      .case-content .content-side .testimony-block .testimony-text {\n        color: #393939;\n        font-size: 14px;\n        font-weight: 400;\n        font-style: italic;\n        line-height: 20px;\n        margin-bottom: 8px;\n        text-align: center; }\n      .case-content .content-side .testimony-block .testimony-source {\n        color: #393939;\n        font-size: 12px;\n        font-weight: 400;\n        text-align: right; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 587 */
+/* 589 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "wodify-bg.png";
 
 /***/ }),
-/* 588 */
+/* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "gwmfa-bg.png";
 
 /***/ }),
-/* 589 */
+/* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "verite-bg.png";
 
 /***/ }),
-/* 590 */
+/* 592 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "networkforgood-bg.png";
 
 /***/ }),
-/* 591 */
+/* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "upside-bg.png";
 
 /***/ }),
-/* 592 */
+/* 594 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "envision-bg.png";
 
 /***/ }),
-/* 593 */
+/* 595 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "wodify-ex.png";
+
+/***/ }),
+/* 596 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "wodify-logo.png";
 
 /***/ }),
-/* 594 */
+/* 597 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46343,7 +46445,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var GWMFA = function (_React$Component) {
 	  _inherits(GWMFA, _React$Component);
@@ -46403,16 +46505,16 @@
 	              { className: 'text' },
 	              'George Washington University Medical Faculty Associates (GW MFA) operates over 50 practices in the Washington, DC area. They wanted to better understand their risk exposure so they could formulate a data-driven growth strategy. This required analyzing large sample sets of data and comparing historical trends.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(595) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(598) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
-	              'Solution'
+	              'Our Solution'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Fast Rope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
+	              'FastRope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -46429,7 +46531,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(596) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(599) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -46447,7 +46549,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/gwmfa' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46483,19 +46585,19 @@
 	exports.default = GWMFA;
 
 /***/ }),
-/* 595 */
+/* 598 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "gwmfa-ex.png";
 
 /***/ }),
-/* 596 */
+/* 599 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "gwmfa-logo.png";
 
 /***/ }),
-/* 597 */
+/* 600 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46526,7 +46628,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var Verite = function (_React$Component) {
 	  _inherits(Verite, _React$Component);
@@ -46560,12 +46662,12 @@
 	            { className: 'case-hero' },
 	            _react2.default.createElement(
 	              'h1',
-	              { className: 'case-headline' },
+	              { className: 'case-headline stix-bi' },
 	              'Verit\xE9 | US State Department'
 	            ),
 	            _react2.default.createElement(
 	              'h3',
-	              { className: 'case-tagline' },
+	              { className: 'case-tagline stix-reg' },
 	              'Ending human trafficking'
 	            )
 	          )
@@ -46586,11 +46688,11 @@
 	              { className: 'text' },
 	              'Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(598) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(601) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
-	              'What we did'
+	              'Our Solution'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -46607,7 +46709,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(599) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(602) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -46625,7 +46727,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/verite' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46661,19 +46763,19 @@
 	exports.default = Verite;
 
 /***/ }),
-/* 598 */
+/* 601 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "verite-ex.png";
 
 /***/ }),
-/* 599 */
+/* 602 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "verite-logo.png";
 
 /***/ }),
-/* 600 */
+/* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46704,7 +46806,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var NetworkForGood = function (_React$Component) {
 	  _inherits(NetworkForGood, _React$Component);
@@ -46738,12 +46840,12 @@
 	            { className: 'case-hero' },
 	            _react2.default.createElement(
 	              'h1',
-	              { className: 'case-headline' },
+	              { className: 'case-headline stix-bi' },
 	              'Network For Good'
 	            ),
 	            _react2.default.createElement(
 	              'h3',
-	              { className: 'case-tagline' },
+	              { className: 'case-tagline stix-reg' },
 	              'Accelerating micro-philanthropy'
 	            )
 	          )
@@ -46762,9 +46864,9 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.'
+	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached FastRope to build solutions to increase engagement and charitable donations among millennials.'
 	            ),
-	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(601) }),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(604) }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'text-header' },
@@ -46779,7 +46881,8 @@
 	              'p',
 	              { className: 'text' },
 	              'Since launch we have seen the velocity of donations increase from once or twice annually to daily, with aggregate amounts increasing as much as 700% on an annual basis.'
-	            )
+	            ),
+	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(605) })
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -46790,7 +46893,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(602) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(606) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -46808,7 +46911,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/networkforgood' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46844,19 +46947,25 @@
 	exports.default = NetworkForGood;
 
 /***/ }),
-/* 601 */
+/* 604 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "networkforgood-ex.png";
 
 /***/ }),
-/* 602 */
+/* 605 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "networkforgood-ex2.png";
+
+/***/ }),
+/* 606 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "networkforgood-logo.png";
 
 /***/ }),
-/* 603 */
+/* 607 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46887,7 +46996,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var Envision = function (_React$Component) {
 	  _inherits(Envision, _React$Component);
@@ -46951,7 +47060,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
+	              'FastRope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -46963,7 +47072,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(604) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(608) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -46981,7 +47090,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/envision' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -47017,13 +47126,13 @@
 	exports.default = Envision;
 
 /***/ }),
-/* 604 */
+/* 608 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "envision-logo.png";
 
 /***/ }),
-/* 605 */
+/* 609 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47054,7 +47163,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(585);
+	__webpack_require__(587);
 	
 	var Upside = function (_React$Component) {
 	  _inherits(Upside, _React$Component);
@@ -47089,7 +47198,7 @@
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'case-headline' },
-	              'UPSIDE'
+	              'Upside'
 	            ),
 	            _react2.default.createElement(
 	              'h3',
@@ -47139,7 +47248,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'logo-inner' },
-	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(606) }),
+	                _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(610) }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { className: 'url' },
@@ -47157,7 +47266,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link' },
+	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/upside' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -47193,19 +47302,19 @@
 	exports.default = Upside;
 
 /***/ }),
-/* 606 */
+/* 610 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "upside-logo.png";
 
 /***/ }),
-/* 607 */
+/* 611 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(608);
+	var content = __webpack_require__(612);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(528)(content, {});
@@ -47225,7 +47334,7 @@
 	}
 
 /***/ }),
-/* 608 */
+/* 612 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(525)();
@@ -47233,31 +47342,31 @@
 	
 	
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Stix-BoldItalic';\n  src: url(" + __webpack_require__(609) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: italic; }\n\n@font-face {\n  font-family: 'Stix-Italic';\n  src: url(" + __webpack_require__(610) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Regular';\n  src: url(" + __webpack_require__(611) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Bold';\n  src: url(" + __webpack_require__(612) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Stix-BoldItalic';\n  src: url(" + __webpack_require__(613) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: italic; }\n\n@font-face {\n  font-family: 'Stix-Italic';\n  src: url(" + __webpack_require__(614) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Regular';\n  src: url(" + __webpack_require__(615) + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Stix-Bold';\n  src: url(" + __webpack_require__(616) + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 609 */
+/* 613 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-BoldItalic.woff";
 
 /***/ }),
-/* 610 */
+/* 614 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Italic.woff";
 
 /***/ }),
-/* 611 */
+/* 615 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Regular.woff";
 
 /***/ }),
-/* 612 */
+/* 616 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "Stix-Bold.woff";

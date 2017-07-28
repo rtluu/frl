@@ -35,8 +35,8 @@ export default class GWMFA extends React.Component {
             <h4 className="text-header">Evaluating Risk, Performance and Opportunity of healthcare clinics</h4>
             <p className="text">George Washington University Medical Faculty Associates (GW MFA) operates over 50 practices in the Washington, DC area. They wanted to better understand their risk exposure so they could formulate a data-driven growth strategy. This required analyzing large sample sets of data and comparing historical trends.</p>
             <img className="example" src={require("../../img/case/gwmfa-ex.png")}  />
-            <h4 className="text-header">Solution</h4>
-            <p className="text">Fast Rope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.</p>
+            <h4 className="text-header">Our Solution</h4>
+            <p className="text">FastRope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.</p>
             <p className="text">GW MFA is now using CartoMD to formulate a growth strategy for future practice expansion</p>
           </div>
 
@@ -48,7 +48,7 @@ export default class GWMFA extends React.Component {
                 <a className="url"><h6 className="url-text">www.gwdocs.com</h6></a>
                 <p className="what-we-did">What we did: Data Science, Web</p>
               </div>
-              <a className="share-link"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/gwmfa"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">

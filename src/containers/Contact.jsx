@@ -115,10 +115,11 @@ export default class Contact extends React.Component {
 
         <div className="contact-hero">
           <h1 className="contact-headline">Get in Touch</h1>
+          <h4 className="contact-description">We'd love to hear from you</h4>
         </div>
 
 
-        <div id="contact-heading" className="contact-form">
+        <div className="contact-form">
           {status}
 
           <form onSubmit={this.handleSubmit} >
@@ -152,7 +153,7 @@ export default class Contact extends React.Component {
 
             <div id="when" className="form-group">
               <h3>HOW SOON DO YOU NEED HELP?</h3>
-              <label className="radio-inline"><input name="when" ref="when" type="radio" value="Immediately" onClick={this.whenChange} /><span>IMMEADIATELY</span></label>
+              <label className="radio-inline"><input name="when" ref="when" type="radio" value="Immediately" onClick={this.whenChange} /><span>IMMEDIATELY</span></label>
               <label className="radio-inline"><input name="when" ref="when" type="radio" value="This Month" onClick={this.whenChange} /><span>THIS MONTH</span></label>
               <label className="radio-inline"><input name="when" ref="when" type="radio" value="This Quarter" onClick={this.whenChange} /><span>THIS QUARTER</span></label>
               <label className="radio-inline"><input name="when" ref="when" type="radio" value="This Year" onClick={this.whenChange} /><span>THIS YEAR</span></label>
@@ -164,11 +165,6 @@ export default class Contact extends React.Component {
               <button className="btn btn-primary" type="submit">SEND MESSAGE</button>
             </div>
           </form>
-
-          <div id="get-in-touch" className="contact-cta">
-            <h1 className="contact-cta-title">Get in Touch</h1>
-            <p className="contact-cta-text">We’d love to hear from you.  Whether it’s a project idea, a question for us, or if you just want to say hi. We’d love to hear from you!</p>
-          </div>
 
           <div id="find-us" className="contact-cta">
             <h1 className="contact-cta-title">Find Us</h1>

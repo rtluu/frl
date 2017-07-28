@@ -17,6 +17,14 @@
     font-size: 48px;
     text-align: center;
   }
+
+  .contact-description{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 8px auto 0 auto;
+    text-align: center;
+  }
 }
 
 .contact-form{
@@ -261,19 +269,6 @@
     @media screen and (max-width: $large){
       display: inline-block;
       position: relative;
-    }
-
-    &#get-in-touch{
-      left: -280px;
-      max-width: 250px;
-      top: 170px;
-      @media screen and (max-width: $large){
-        left: auto;
-        margin-top: 30px;
-        max-width: 100%;
-        text-align: left;
-        top: auto;
-      }
     }
 
     &#find-us{

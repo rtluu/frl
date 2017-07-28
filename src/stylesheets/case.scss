@@ -69,6 +69,15 @@
       font-weight: 900;
       margin: 0 auto;
       padding-bottom: 90px;
+
+      &.robo-reg{
+        font-weight: 400;
+      }
+
+      &.stix-bi{
+        font-family: $stixBI;
+      }
+
       @media screen and (max-width: $stacked){
         font-size: 54px;
         padding-bottom: 75px;
@@ -87,6 +96,10 @@
       color: white;
       font-size: 27px;
       font-weight: 300;
+
+      &.stix-reg{
+        font-family: $stix;
+      }
       @media screen and (max-width: $stacked){
         font-size: 24px;
       }

@@ -35,7 +35,7 @@ export default class Envision extends React.Component {
             <h4 className="text-header">Coloring book tumblr vinyl</h4>
             <p className="text">Envision Energy is a global provider for smart energy technology including energy management software and smart turbines. The company needed **_**.</p>
             <div className="img" />
-            <p className="text">Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.</p>
+            <p className="text">FastRope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.</p>
           </div>
 
           <div className="content-side">
@@ -46,7 +46,7 @@ export default class Envision extends React.Component {
                 <a className="url"><h6 className="url-text">envision.com</h6></a>
                 <p className="what-we-did">Categories: Data Science</p>
               </div>
-              <a className="share-link"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/envision"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">

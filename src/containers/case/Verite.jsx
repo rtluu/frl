@@ -24,8 +24,8 @@ export default class Verite extends React.Component {
 
         <div id="verite" className="case-header">
           <div className="case-hero">
-            <h1 className="case-headline">Verité | US State Department</h1>
-            <h3 className="case-tagline">Ending human trafficking</h3>
+            <h1 className="case-headline stix-bi">Verité | US State Department</h1>
+            <h3 className="case-tagline stix-reg">Ending human trafficking</h3>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ export default class Verite extends React.Component {
             <h4 className="text-header">Data for Good</h4>
             <p className="text">Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.</p>
             <img className="example" src={require("../../img/case/verite-ex.png")}  />
-            <h4 className="text-header">What we did</h4>
+            <h4 className="text-header">Our Solution</h4>
             <p className="text">Fastrope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.</p>
           </div>
 
@@ -47,7 +47,7 @@ export default class Verite extends React.Component {
                 <a className="url"><h6 className="url-text">www.state.gov</h6></a>
                 <p className="what-we-did">Categories: Data Science</p>
               </div>
-              <a className="share-link"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/verite"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">
