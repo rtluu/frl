@@ -36,7 +36,7 @@ export default class Verite extends React.Component {
             <p className="text">Verite is an non-profit organization that conducts research, advocacy, consulting, trainings, and assessments with a vision that people worldwide work under safe, fair, and legal conditions. The nonprofit came to us to find trends in large sets of qualitative and quantitative data to help uncover labor rights violations for Fortune 500 companies.</p>
             <img className="example" src={require("../../img/case/verite-ex.png")}  />
             <h4 className="text-header">Our Solution</h4>
-            <p className="text">Fastrope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.</p>
+            <p className="text">Fast Rope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.</p>
           </div>
 
           <div className="content-side">
@@ -45,14 +45,14 @@ export default class Verite extends React.Component {
               <div className="logo-inner">
                 <img className="logo" src={require("../../img/case/verite-logo.png")}  />
                 <a className="url"><h6 className="url-text">www.state.gov</h6></a>
-                <p className="what-we-did">Categories: Data Science</p>
+                <p className="what-we-did">Category: Data Science</p>
               </div>
-              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/verite"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/verite"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">
               <div className="testimony-pic" />
-              <p className="testimony-text">"Testimonial goes right here because  FastRope is just THE coolest ever."</p>
+              <p className="testimony-text">"Testimonial goes right here because  Fast Rope is just THE coolest ever."</p>
               <p className="testimony-source">- Barack Obama</p>
             </div>
 

@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
     return(
       <footer className="footer">
         <div className="left">
-          <p>Copyright FastRope Labs 2017.</p>
+          <p>Copyright Fast Rope Labs 2017.</p>
         </div>
         <div className="right">
           <Link to="/contact" className="page-link">Contact</Link>

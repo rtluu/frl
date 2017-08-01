@@ -33,7 +33,7 @@ export default class NetworkForGood extends React.Component {
 
           <div className="content-main">
             <h4 className="text-header">Micro-Donation Platform for Charities</h4>
-            <p className="text">Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached FastRope to build solutions to increase engagement and charitable donations among millennials.</p>
+            <p className="text">Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.</p>
             <img className="example" src={require("../../img/case/networkforgood-ex.png")}  />
             <h4 className="text-header">Our Solution</h4>
             <p className="text">After extensive user research about the company’s target demographics we developed a concept called HippoGive - an app that rounds up daily purchases to the nearest dollar. The spare change collected is then donated to charities selected in advance by the user.  Although, the donations are collected in the background, a social feed builds engagement and increases network effects between friends.</p>
@@ -47,14 +47,14 @@ export default class NetworkForGood extends React.Component {
               <div className="logo-inner">
                 <img className="logo" src={require("../../img/case/networkforgood-logo.png")}  />
                 <a className="url"><h6 className="url-text">networkforgood.org</h6></a>
-                <p className="what-we-did">What we did: Mobile, Growth</p>
+                <p className="what-we-did">Category: Mobile, Growth</p>
               </div>
-              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/networkforgood"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/networkforgood"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">
               <div className="testimony-pic" />
-              <p className="testimony-text">"Testimonial goes right here because  FastRope is just THE coolest ever."</p>
+              <p className="testimony-text">"Testimonial goes right here because  Fast Rope is just THE coolest ever."</p>
               <p className="testimony-source">- Barack Obama</p>
             </div>
 

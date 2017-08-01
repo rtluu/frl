@@ -45,14 +45,14 @@ export default class Upside extends React.Component {
               <div className="logo-inner">
                 <img className="logo" src={require("../../img/case/upside-logo.png")}  />
                 <a className="url"><h6 className="url-text">upside.com</h6></a>
-                <p className="what-we-did">Categories: Data science, product, growth</p>
+                <p className="what-we-did">Category: Data science, product, growth</p>
               </div>
-              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/upside"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/upside"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">
               <div className="testimony-pic" />
-              <p className="testimony-text">"Testimonial goes right here because  FastRope is just THE coolest ever."</p>
+              <p className="testimony-text">"Testimonial goes right here because  Fast Rope is just THE coolest ever."</p>
               <p className="testimony-source">- Barack Obama</p>
             </div>
 

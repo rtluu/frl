@@ -35224,7 +35224,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.'
+	                  'Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing (NLP) and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.'
 	                )
 	              )
 	            ),

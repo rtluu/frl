@@ -35,7 +35,7 @@ export default class Envision extends React.Component {
             <h4 className="text-header">Coloring book tumblr vinyl</h4>
             <p className="text">Envision Energy is a global provider for smart energy technology including energy management software and smart turbines. The company needed **_**.</p>
             <div className="img" />
-            <p className="text">FastRope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.</p>
+            <p className="text">Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.</p>
           </div>
 
           <div className="content-side">
@@ -44,14 +44,14 @@ export default class Envision extends React.Component {
               <div className="logo-inner">
                 <img className="logo" src={require("../../img/case/envision-logo.png")}  />
                 <a className="url"><h6 className="url-text">envision.com</h6></a>
-                <p className="what-we-did">Categories: Data Science</p>
+                <p className="what-we-did">Category: Data Science</p>
               </div>
-              <a className="share-link" href="mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/envision"><button className="share-button">share this</button></a>
+              <a className="share-link" href="mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it — http://fastrope.in/envision"><button className="share-button">share this</button></a>
             </div>
 
             <div className="testimony-block">
               <div className="testimony-pic" />
-              <p className="testimony-text">"Testimonial goes right here because  FastRope is just THE coolest ever."</p>
+              <p className="testimony-text">"Testimonial goes right here because  Fast Rope is just THE coolest ever."</p>
               <p className="testimony-source">- Barack Obama</p>
             </div>
 

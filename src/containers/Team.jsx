@@ -109,7 +109,7 @@ export default class Team extends React.Component {
               <img className="teammate-pic" src={require("../img/team/josh.png")}></img>
               <div className="teammate-overlay">
                 <h4 className="teammate-title">Josh Tackett, Fullstack Engineer</h4>
-                <p className="teammate-description">Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.</p>
+                <p className="teammate-description">Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, Natural Language Processing (NLP) and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.</p>
               </div>
             </li>
             <li id="matt" className="teammate" tabIndex="1" onFocus={this.openOverlay} onBlur={this.closeOverlay}>
