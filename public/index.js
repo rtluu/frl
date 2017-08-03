@@ -34659,7 +34659,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Copyright FastRope Labs 2017.'
+	            'Copyright Fast Rope Labs 2017.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -35224,7 +35224,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'teammate-description' },
-	                  'Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, natural language processing (NLP) and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.'
+	                  'Josh started his career learning from and working with Scott Case the founding CTO of priceline.com. He continued to work with numerous technology companies, solving problems in Ecommerce, conversational interfaces, Natural Language Processing (NLP) and hardware/software integration. He is a dual threat as both a software developer as well as a technology team lead.'
 	                )
 	              )
 	            ),
@@ -46255,7 +46255,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'FastRope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
+	              'Fast Rope identified a IoT bridge device and adapted it to Wodify\u2019s use case. We worked with the hardware manufacturer to modify the device firmware, developed a custom cloud infrastructure so that Wodify could integrate data streaming with their own services and walked the Wodify team how to operationalize the solution at scale.'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -46290,7 +46290,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/wodify' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/wodify' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46305,7 +46305,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -46514,7 +46514,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'FastRope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
+	              'Fast Rope ingested performance data from each of the GW MFA practices and combined it with data from the US Census, Bureau of Labor Statistics, Centers for Medicare & Medicaid Services, and Real Estate Data. We performed a component analysis to model the financial risk and opportunity of each practice site and adapted and developed into cloud-hosted health intelligence tool, CartoMD, providing GIS-aware predictive analytics and granular heat maps to illustrate expansion opportunity hot spots.'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -46544,12 +46544,12 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'what-we-did' },
-	                  'What we did: Data Science, Web'
+	                  'Category: Data Science, Web'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/gwmfa' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/gwmfa' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46564,7 +46564,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -46697,7 +46697,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Fastrope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.'
+	              'Fast Rope produced an intelligent data capture tool that automatically tagged and categorized notes taken by field researchers. Paired with a custom visualization platform that defined relationships between clients and their suppliers, this allowed clients to easily flag abnormalities and identify systemic issues in their supply chain so they can take immediate action.'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -46722,12 +46722,12 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'what-we-did' },
-	                  'Categories: Data Science'
+	                  'Category: Data Science'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/verite' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/verite' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46742,7 +46742,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -46864,7 +46864,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached FastRope to build solutions to increase engagement and charitable donations among millennials.'
+	              'Network for Good is the gold standard for online fundraising for charities and nonprofits. To date they have processed over $1 billion in donations. The company approached Fast Rope to build solutions to increase engagement and charitable donations among millennials.'
 	            ),
 	            _react2.default.createElement('img', { className: 'example', src: __webpack_require__(604) }),
 	            _react2.default.createElement(
@@ -46906,12 +46906,12 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'what-we-did' },
-	                  'What we did: Mobile, Growth'
+	                  'Category: Mobile, Growth'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/networkforgood' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/networkforgood' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -46926,7 +46926,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -47060,7 +47060,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'text' },
-	              'FastRope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
+	              'Fast Rope researched historical data of windmill performance and created a machine learning engine to accurately predict the lifespan and sustainability of individuals windmills.'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -47085,12 +47085,12 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'what-we-did' },
-	                  'Categories: Data Science'
+	                  'Category: Data Science'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/envision' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/envision' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -47105,7 +47105,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -47261,12 +47261,12 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'what-we-did' },
-	                  'Categories: Data science, product, growth'
+	                  'Category: Data science, product, growth'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'share-link', href: 'mailto:?subject=Fastrope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/upside' },
+	                { className: 'share-link', href: 'mailto:?subject=Fast Rope Labs&body=I found this case study and thought that you might want to see it \u2014 http://fastrope.in/upside' },
 	                _react2.default.createElement(
 	                  'button',
 	                  { className: 'share-button' },
@@ -47281,7 +47281,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                { className: 'testimony-text' },
-	                '"Testimonial goes right here because \u2028FastRope is just THE coolest ever."'
+	                '"Testimonial goes right here because \u2028Fast Rope is just THE coolest ever."'
 	              ),
 	              _react2.default.createElement(
 	                'p',
