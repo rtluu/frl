@@ -83,7 +83,7 @@ export default class Home extends React.Component {
               </li>
               <li className="capabilities-item">
                 <img src={require("../img/home/capabilities/design.png")} />
-                <h5 className="capabilities-text">DESIGN</h5>
+                <h5 className="capabilities-text">PRODUCT DESIGN</h5>
               </li>
               <li className="capabilities-item">
                 <img src={require("../img/home/capabilities/hardware.png")} />

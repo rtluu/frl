@@ -17,20 +17,20 @@
 
     #fr-logo{
       background: url('../img/logo/fr-logo-full.svg');
-      background-size: 207px 54px;
+      background-size: 207px 59px;
       background-repeat: no-repeat;
       background-position: center;
       display: inline-block;
-      height: 54px;
+      height: 59px;
       width: 207px;
 
       @media screen and (max-width: $small){
         background: url('../img/logo/fr-logo-small.svg');
-        background-size: 48px 54px;
+        background-size: 48px 59px;
         background-repeat: no-repeat;
         background-position: center;
         display: inline-block;
-        height: 54px;
+        height: 59px;
         width: 48px;
       }
     }
@@ -72,11 +72,11 @@
 
       #fr-logo{
         background: url('../img/logo/fr-logo-small.svg');
-        background-size: 48px 54px;
+        background-size: 48px 59px;
         background-repeat: no-repeat;
         background-position: center;
         display: inline-block;
-        height: 54px;
+        height: 59px;
         width: 48px;
       }
     }
@@ -86,14 +86,14 @@
     display: inline-block;
     position: absolute;
     right: 30px;
-    top: 28px;
+    top: 30px;
     @media screen and (max-width: $small){
       right: 30px;
-      top: 35px;
+      top: 37px;
     }
     @media screen and (max-width: $phone){
       right: 20px;
-      top: 35px;
+      top: 37px;
     }
 
     .page-link{
